@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     title: "Authorized Brands — Advanced Security Syndicate",
     description: "Authorized distributor for CP Plus, Seagate, D-Link, TP-Link, Hikvision & 11+ security brands.",
   },
+  alternates: {
+    canonical: "https://assyndicate.com/brands",
+  },
 };
 
 export default function BrandsPage() {

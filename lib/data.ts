@@ -12,7 +12,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["EzyKam Wi-Fi Cloud PTZ", "Indigo Series Enterprise IP Camera", "Smart Multi-Apartment Door Stations", "Long-Range PoE Extenders"],
     foundedYear: "2007",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
   {
     id: "seagate",
@@ -25,7 +26,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["SkyHawk 4TB/8TB Surveillance HDD", "SkyHawk AI 10TB/16TB Commercial Drive", "Exos Enterprise Storage Arrays", "IronWolf NAS Series Dual-Drive Storage"],
     foundedYear: "1979",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
   {
     id: "tplink",
@@ -38,7 +40,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["Omada PoE+ Smart Switches", "Wi-Fi 6 AX Routers", "Outdoor Access Points", "Deco Mesh Wi-Fi Systems"],
     foundedYear: "1996",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
   {
     id: "dlink",
@@ -51,7 +54,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["DGS Managed Gigabit Switches", "DCS IP Surveillance Cameras", "Nuclias Cloud-Managed Wi-Fi", "Industrial-Grade PoE Switches"],
     foundedYear: "1986",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
   {
     id: "connect-g",
@@ -64,7 +68,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["Surveillance 4U Wallmount Racks", "CAT6 Solid Copper Patch Cords", "SFP Optical Transceiver Nodes", "9-Channel / 16-Channel 12V SMPS"],
     foundedYear: "2018",
     relationshipType: "Authorized National Distributor",
-    website: "#"
+    website: "#",
+    content:"contain"
   },
   {
     id: "syntel",
@@ -77,7 +82,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["Neos Digital EPABX Server", "IP-PBX Gateway Units", "Executive Key Telephone Systems", "Operator Consoles with SIP Integration"],
     foundedYear: "2011",
     relationshipType: "Authorized National Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
   {
     id: "ivoomi",
@@ -90,7 +96,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["Smart Wi-Fi IP Cameras", "Video Doorbell Pro", "Indoor Pan-Tilt Cameras", "Solar-Powered Security Cam"],
     foundedYear: "2016",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"contain"
   },
   {
     id: "zebion",
@@ -103,7 +110,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["UPS Systems for NVR", "Control Room Keyboards & Mice", "HDMI & VGA Cables", "Surge Protectors"],
     foundedYear: "2010",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
   {
     id: "gold",
@@ -116,7 +124,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["BNC Connector Sets", "Power Adapters & Splitters", "Cable Management Trays", "Surveillance Junction Boxes"],
     foundedYear: "2005",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"contain"
   },
   {
     id: "aoc",
@@ -129,7 +138,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["Surveillance Control Room Monitors", "4K Ultra HD Display Panels", "Multi-Input Professional Screens", "Ultra-Wide Curved Monitors"],
     foundedYear: "1967",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
   {
     id: "trion",
@@ -142,7 +152,8 @@ export const BRANDS: Brand[] = [
     featuredProducts: ["CCTV Power Cables", "CAT6 Ethernet Cables", "RG59 Coaxial Cables", "Armoured Security Cables"],
     foundedYear: "2000",
     relationshipType: "Regional Distributor",
-    website: "#"
+    website: "#",
+    content:"cover"
   },
 ];
 

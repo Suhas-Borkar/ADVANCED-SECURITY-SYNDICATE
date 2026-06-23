@@ -86,9 +86,9 @@ export default function BrandsView() {
               <div className="space-y-6">
                 <div className="flex items-start justify-between border-b border-slate-100 pb-5">
                   <div className="flex items-center gap-4">
-                    <div className="bg-white border border-slate-200 w-24 h-16 rounded-2xl flex items-center justify-center p-2.5 shadow-sm overflow-hidden shrink-0">
+                    <div className="bg-white border border-slate-200 w-50 h-20 rounded-2xl flex items-center justify-center p-1 shadow-sm overflow-hidden shrink-0">
                       {brand.image ? (
-                        <img src={brand.image} alt={brand.name} className="w-full h-full object-contain" />
+                        <img src={brand.image} alt={brand.name} className={`w-full h-full object-${brand.content}`} />
                       ) : (
                         <span className="text-4xl">{brand.logo}</span>
                       )}
@@ -100,9 +100,9 @@ export default function BrandsView() {
                       </span>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono font-bold tracking-wider px-2.5 py-1 bg-brand-50 text-brand-700 border border-brand-200 rounded-full uppercase">
+                  {/* <span className="text-[10px] font-mono font-bold tracking-wider px-2.5 py-1 bg-brand-50 text-brand-700 border border-brand-200 rounded-full uppercase">
                     {brand.relationshipType}
-                  </span>
+                  </span> */}
                 </div>
 
                 <div className="space-y-2">

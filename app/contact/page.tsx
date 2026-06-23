@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     title: "Contact Advanced Security Syndicate",
     description: "Reach out for bulk orders, dealer accounts, or product inquiries. Pune, Maharashtra. +91 9689147700.",
   },
+  alternates: {
+    canonical: "https://assyndicate.com/contact",
+  },
 };
 
 export default function ContactPage() {

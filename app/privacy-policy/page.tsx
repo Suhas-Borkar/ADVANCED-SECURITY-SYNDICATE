@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     description:
       "Review the privacy practices of Advanced Security Syndicate, including data collection, usage, cookies, and rights for users of acgrindia.com.",
   },
+  alternates: {
+    canonical: "https://assyndicate.com/privacy-policy",
+  },
 }
 
 export default function PrivacyPolicyPage() {

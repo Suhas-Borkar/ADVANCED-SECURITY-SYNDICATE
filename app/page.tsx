@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     title: "Advanced Security Syndicate — Security & Surveillance Distributor",
     description: "Regional distributor of CCTV cameras & security solutions. CP Plus, Seagate, D-Link, TP-Link & more.",
   },
+  alternates: {
+    canonical: "https://assyndicate.com",
+  },
 };
 
 export default function HomePage() {
