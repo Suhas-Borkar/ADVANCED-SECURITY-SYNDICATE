@@ -15,6 +15,48 @@ export const BRANDS: Brand[] = [
     website: "#",
     content:"cover"
   },
+  // {
+  //   id: "hikvision",
+  //   name: "Hikvision",
+  //   logo: "🎥",
+  //   image: "/distributors/hikvision.png",
+  //   description: "Global leader in video surveillance and AI-powered security solutions, spanning cameras, recorders, and analytics.",
+  //   longDescription: "Hikvision provides end-to-end surveillance hardware and AI analytics for large commercial, industrial, and government security deployments. Their portfolio includes high-resolution IP cameras, deep-learning NVRs, and access control for enterprise-grade installations.",
+  //   category: "Camera",
+  //   featuredProducts: ["ColorVu Night Vision Cameras", "Acusense AI Dual-Lens Cameras", "DeepinView Face Recognition Systems", "NVR X Series with Smart Coding"],
+  //   foundedYear: "2001",
+  //   relationshipType: "Authorized National Distributor",
+  //   website: "#",
+  //   content:"cover"
+  // },
+  {
+    id: "prama",
+    name: "Prama",
+    logo: "🔭",
+    image: "/distributors/prama.png",
+    description: "Domestic security brand offering smart IP cameras, PoE NVRs, and monitoring solutions for commercial and residential installs.",
+    longDescription: "Prama strengthens our homegrown portfolio with cost-effective security cameras, NVR systems, and access control devices. Their solutions are built for agile installation and reliable remote monitoring across Indian enterprise and retail sites.",
+    category: "Camera",
+    featuredProducts: ["2MP/4MP IP Bullet Cameras", "8-Channel PoE NVRs", "Smart Door Access Controllers", "Mobile App Remote Monitoring"],
+    foundedYear: "2012",
+    relationshipType: "Regional Distributor",
+    website: "#",
+    content:"cover"
+  },
+  {
+    id: "prizor",
+    name: "Prizor",
+    logo: "🛡️",
+    image: "/distributors/prizor.png",
+    description: "Trusted supplier of surveillance storage and rugged networking accessories for mission-critical security systems.",
+    longDescription: "Prizor products support high-availability CCTV ecosystems with certified storage, PoE injectors, and hardened cabling. Their rugged accessory range is built for industrial surveillance, traffic monitoring, and remote facility security.",
+    category: "Accessories",
+    featuredProducts: ["Industrial PoE Injectors", "Outdoor Cable Junction Boxes", "Surveillance Grade HDD Enclosures", "Rugged IP65 Network Switches"],
+    foundedYear: "2015",
+    relationshipType: "Authorized National Distributor",
+    website: "#",
+    content:"cover"
+  },
   {
     id: "seagate",
     name: "Seagate",
@@ -69,7 +111,7 @@ export const BRANDS: Brand[] = [
     foundedYear: "2018",
     relationshipType: "Authorized National Distributor",
     website: "#",
-    content:"contain"
+    content:"cover"
   },
   {
     id: "syntel",
@@ -97,7 +139,7 @@ export const BRANDS: Brand[] = [
     foundedYear: "2016",
     relationshipType: "Regional Distributor",
     website: "#",
-    content:"contain"
+    content:"cover"
   },
   {
     id: "zebion",
@@ -205,7 +247,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Ajay Shukla",
     role: "Proprietor & Engineering Lead",
     company: "SecurTech Solutions",
-    content: "Advanced Security Syndicate has completely transformed our supply chain. For our safe-city tender, they arranged bulk Seagate SkyHawk storage and Hikvision cameras overnight. Their customized support is unprecedented.",
+    content: "Advanced Security Syndicate has completely transformed our supply chain. For our safe-city tender, they arranged bulk Seagate SkyHawk storage and Prama cameras overnight. Their customized support is unprecedented.",
     rating: 5,
     location: "Nagpur, MH"
   },

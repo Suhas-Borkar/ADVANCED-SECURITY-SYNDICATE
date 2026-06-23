@@ -76,11 +76,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3.5 text-sm">
               {[
-                { href: "/", label: "Home Base" },
-                { href: "/about", label: "About The Company" },
-                { href: "/brands", label: "Authorized Brands" },
+                { href: "/", label: "Home" },
+                { href: "/about", label: "About" },
+                { href: "/brands", label: "Distribution" },
                 { href: "/terms", label: "Terms & Conditions" },
-                { href: "/contact", label: "Contact Channel" },
+                { href: "/privacy-policy", label: "Privacy Policy" },
+                { href: "/contact", label: "Contact Us" },
               ].map((item) => (
                 <li key={item.href}>
                   <button
@@ -101,7 +102,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li>
                 <span className="text-xs font-semibold uppercase font-mono text-brand-400 block mb-0.5">CCTV & Security</span>
-                CP Plus • Hikvision • Prama • iVOOMi
+                CP Plus • Prizor • Prama • Syntel 
               </li>
               <li>
                 <span className="text-xs font-semibold uppercase font-mono text-brand-400 block mb-0.5">Storage & Networking</span>
@@ -109,7 +110,7 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-xs font-semibold uppercase font-mono text-brand-400 block mb-0.5">More Brands</span>
-                Syntel • Zebion • Gold • AOC • Trion Cables
+                iVOOMi • Zebion • Gold • AOC • Trion Cables
               </li>
             </ul>
           </div>
@@ -125,11 +126,20 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-brand-500 shrink-0" />
-                <span>+91 9689147700</span>
+                <a href="tel:+918830851805" className="text-slate-400 hover:text-white transition-colors duration-150">
+                  <span>+91 8830851805</span>
+                </a>
+                <a href="tel:+919689147700" className="text-slate-400 hover:text-white transition-colors duration-150">
+                  <span>+91 9689147700</span>
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-500 shrink-0" />
-                <span className="break-all">advancescrtcp55@gmail.com</span>
+                <a href="mailto:advancedssyn@gmail.com" className="text-slate-400 hover:text-white transition-colors duration-150">
+                  <span className="break-all">
+                    advancedssyn@gmail.com
+                  </span>
+                </a>
               </li>
             </ul>
           </div>

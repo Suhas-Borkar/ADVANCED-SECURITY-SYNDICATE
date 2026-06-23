@@ -172,7 +172,7 @@ export default function HomeView() {
                 <div className="p-4 bg-brand-50/50 rounded-xl border border-brand-100 flex justify-between items-center">
                   <div>
                     <span className="block text-xs font-mono text-brand-800 font-bold uppercase">Direct Brand Access</span>
-                    <span className="text-sm text-slate-700 font-medium font-sans">Authorized Partner — Hikvision & Prama</span>
+                    <span className="text-sm text-slate-700 font-medium font-sans">Authorized Partner — Prizor & Prama</span>
                   </div>
                   <span className="text-xs bg-brand-600 text-white font-mono px-2 py-0.5 rounded font-medium">VERIFIED</span>
                 </div>

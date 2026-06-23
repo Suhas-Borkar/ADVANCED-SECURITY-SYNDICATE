@@ -450,6 +450,9 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-17 {
+    height: calc(var(--spacing) * 17);
+  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -461,6 +464,12 @@
   }
   .h-full {
     height: 100%;
+  }
+  .max-h-\[calc\(100vh-2rem\)\] {
+    max-height: calc(100vh - 2rem);
+  }
+  .max-h-\[calc\(100vh-16rem\)\] {
+    max-height: calc(100vh - 16rem);
   }
   .max-h-full {
     max-height: 100%;
