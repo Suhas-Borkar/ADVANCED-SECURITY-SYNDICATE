@@ -10,7 +10,7 @@ export default function BrochureModal() {
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/70 backdrop-blur-xs flex items-center justify-center p-4">
-      <div className="bg-white rounded-3xl border border-slate-200 w-full max-w-3xl overflow-hidden shadow-2xl animate-scale-up print:p-0 print:border-0 print:shadow-none">
+      <div className="bg-white rounded-3xl border border-slate-200 w-full max-w-3xl max-h-[calc(100vh-2rem)] shadow-2xl animate-scale-up print:p-0 print:border-0 print:shadow-none overflow-hidden">
 
         <div className="p-5 bg-slate-900 text-white flex justify-between items-center print:hidden border-b">
           <div className="flex items-center gap-2.5">
@@ -34,7 +34,7 @@ export default function BrochureModal() {
           </div>
         </div>
 
-        <div className="p-8 sm:p-12 space-y-8 print:p-0">
+        <div className="p-8 sm:p-12 space-y-8 print:p-0 overflow-y-auto max-h-[calc(100vh-16rem)]">
 
           <div className="flex items-center justify-between border-b pb-6 border-slate-200">
             <div>
@@ -77,7 +77,8 @@ export default function BrochureModal() {
                 <ul className="space-y-1.5 text-xs">
                   <li>• <strong>Connect-G</strong> - Active-passive accessories</li>
                   <li>• <strong>Syntel Telecom</strong> - Unified EPABX servers</li>
-                  <li>• <strong>Hikvision Pro</strong> - Acusense video CCTV</li>
+                  <li>• <strong>Prama</strong> - Indian IP cameras and PoE NVR solutions</li>
+                  <li>• <strong>Prizor</strong> - Surveillance storage accessories and rugged cabling</li>
                   <li>• <strong>Seagate SkyHawk</strong> - Optimised HDD storage</li>
                 </ul>
               </div>

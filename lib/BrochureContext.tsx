@@ -26,42 +26,41 @@ ADVANCED SECURITY SYNDICATE - DIGITAL BROCHURE
 Certified Security Solutions Provider
 Status: Authorized Direct Channel Partner
 
-Advanced Security Syndicate is a premier security solutions
-company specializing in CCTV Security Cameras, Enterprise EPABX
-Servers, Surveillance Hard Drives, Active PoE Switches, and
-heavy-gauge passive networking accessories.
+Advanced Security Syndicate is a premier regional distributor of
+security and surveillance systems across India. We source and
+supply certified CCTV cameras, storage drives, network switching,
+and integrated telecom infrastructure from global and domestic
+brand principals.
 
 -------------------------------------------
 1. CRITICAL PERFORMANCE NUMBERS:
 -------------------------------------------
-• Cumulative Business Transacted: ₹250+ Crore
-• Channel Sub-Dealers Activated: 5,000+ Retailers
-• Brand Partnerships: 10+ Global & Domestic Leaders
-• Operational Regional Coverages: 40+ Cities
+• Business Volume Transacted: ₹168+ Crore
+• Active Channel Sub-Dealers: 5,000+ Retailers
+• Brand Partnerships: 14+ Strategic Manufacturers
+• Regional Presence: 40+ Cities
 
 -------------------------------------------
 2. STRATEGIC BRAND ALLIANCES & ROLES:
 -------------------------------------------
 • Connect-G: Authorized National Distributor (Racks, SMPS, Fiber PT)
 • Syntel Telecom: Authorized National Distributor (Digital EPABX, SIP)
-• Cofe Routers: Authorized National Distributor (4G LTE SIM CPE Units)
-• Hikvision: Regional Channel Partner (AcuSense IP Cameras, NVRs)
-• Prama India: Regional Channel Partner (NDAA Compliant Indian Cams)
+• Cofe: Authorized National Distributor (4G LTE SIM CPE Units)
+• Prama: Authorized Regional Channel Partner (IP Cameras, PoE NVRs)
+• Prizor: Authorized Accessory Partner (Storage Accessories, Rugged Cabling)
 • Seagate: Certified Regional Partner (SkyHawk Surveillance Storage)
-• CP Plus: Distributor Partner (Smart Visual Locks, Wi-Fi EzyKam)
+• CP Plus: Distributor Partner (Smart CCTV Systems, Hybrid NVRs)
+• TP-Link: Networking Partner (Omada PoE Switches, Wireless Access)
+• D-Link: Networking Partner (Managed Switches, IP Cameras)
 
 -------------------------------------------
 3. CORE REGISTERED ADDRESSES & OFFICES:
 -------------------------------------------
-• Nagpur Headquarters: ACGR Building, Civil Lines, Nagpur - 440001
-  Hotline: +91 91580 XXXXX | Email: info@acgr.in
-• Indore Regional Office: Vijay Nagar Ring Road, Indore, MP - 452010
-  Hotline: +91 94222 XXXXX | Email: mp.sales@acgr.in
-• Central Warehouses: Kalamboli industrial Park, Navi Mumbai - 410218
-  Email: logistics@acgr.in
+• Pune Corporate Office: Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune - 411027
+  Hotline: +918830851805 | +919689147700 || Email: advancedssyn@gmail.com
 
 ===========================================
-ADVANCED SECURITY SYNDICATE - ENGINEERED FOR SECURITY
+ADVANCED SECURITY SYNDICATE - ENGINEERED FOR TRUSTED SECURITY
 ===========================================`;
 
     const blob = new Blob([textData], { type: "text/plain;charset=utf-8" });

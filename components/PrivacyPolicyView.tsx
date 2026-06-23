@@ -85,8 +85,8 @@ export default function PrivacyPolicyView() {
         <h2 className="mt-10 text-2xl font-semibold text-slate-900">Contact Us</h2>
         <p className="flex gap-1 text-slate-700 text-ls font-sans items-center">
           If you have questions about this Privacy Policy, please contact us at
-          <a className="text-brand-600 hover:text-brand-700 underline" href="mailto:advancescrtcp55@gmail.com">
-            advancescrtcp55@gmail.com
+          <a className="text-brand-600 hover:text-brand-700 underline" href="mailto:advancedssyn@gmail.com">
+            advancedssyn@gmail.com
           </a>.
         </p>
       </section>

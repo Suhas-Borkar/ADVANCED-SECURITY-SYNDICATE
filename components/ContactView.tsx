@@ -30,8 +30,8 @@ export default function ContactView() {
   const officeDetails = {
     title: "Advanced Security Syndicate — Headquarters",
     address: "Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune – 411027",
-    phone: "+91 9689147700",
-    email: "advancescrtcp55@gmail.com",
+    phone: "+918830851805 || +919689147700",
+    email: "advancedssyn@gmail.com",
     locationHint: "Opp Union Bank, New Sangavi, Pune",
     coords: "LAT: 18.5626° N, LON: 73.7884° E"
   };
@@ -171,7 +171,7 @@ export default function ContactView() {
                       className={`w-full p-3 bg-slate-50 border rounded-xl outline-none text-sm transition-all text-slate-800 ${
                         formErrors.name ? "border-red-500 bg-red-50/20" : "border-slate-200 focus:border-brand-500 focus:bg-white"
                       }`}
-                      placeholder="e.g. Sandeep Birari"
+                      placeholder="e.g. Rohit Sharma"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
@@ -207,7 +207,7 @@ export default function ContactView() {
                       className={`w-full p-3 bg-slate-50 border rounded-xl outline-none text-sm transition-all text-slate-800 ${
                         formErrors.email ? "border-red-500 bg-red-50/20" : "border-slate-200 focus:border-brand-500 focus:bg-white"
                       }`}
-                      placeholder="e.g. partners@advancedsecurity.in"
+                      placeholder="e.g. partners@gmail.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     />
@@ -263,7 +263,8 @@ export default function ContactView() {
                     Brands of Interest (Multi-select optional):
                   </label>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                    {["Connect-G", "Syntel", "Hikvision", "Prama", "Seagate", "CP Plus", "Cofe"].map((br) => {
+                    {
+                    ["CP Plus","Prama","Prizor","Seagate","TP-Link","D-Link","Connect-G","Syntel","iVOOMi","Zebion","Gold","AOC","Trion"].map((br) => {
                       const isChecked = formData.brandsOfInterest.includes(br);
                       return (
                         <button

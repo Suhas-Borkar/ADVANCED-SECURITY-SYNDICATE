@@ -49,7 +49,7 @@ export default function BrandsView() {
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
               <input
                 type="text"
-                placeholder="Search authorized brands (e.g. Hikvision, Seagate, Syntel)..."
+                placeholder="Search authorized brands (e.g. Seagate, Syntel)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 focus:border-brand-500 focus:bg-white rounded-xl text-sm font-sans text-slate-800 outline-none transition-all placeholder:text-slate-400"
