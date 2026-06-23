@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     title: "About Advanced Security Syndicate",
     description: "Regional distributor of security & surveillance solutions since 2021. ₹168 Cr revenue FY 2025–26.",
   },
+  alternates: {
+    canonical: "https://assyndicate.com/about",
+  },
 };
 
 export default function AboutPage() {

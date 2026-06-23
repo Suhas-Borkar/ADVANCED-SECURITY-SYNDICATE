@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     title: "CCTV Storage Calculator — Advanced Security Syndicate",
     description: "Free tool to calculate HDD storage for CCTV projects. Cameras, resolution, FPS & retention.",
   },
+  alternates: {
+    canonical: "https://assyndicate.com/performance",
+  },
 };
 
 export default function PerformancePage() {

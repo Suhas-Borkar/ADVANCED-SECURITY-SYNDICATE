@@ -3,7 +3,7 @@ import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://advancedsecuritysyndicate.in"),
+  metadataBase: new URL("https://assyndicate.com"),
   title: "Advanced Security Syndicate — Regional Distributor of Security & Surveillance Solutions",
   description:
     "Advanced Security Syndicate is a regional distributor of electronic security and surveillance solutions in India. Since 2021, supplying CCTV cameras, recorders, storage media and accessories — CP Plus, Seagate, D-Link, TP-Link and more. Ranked Top #10 Surveillance Distributor. Revenue ₹168 Cr in FY 2025–26.",
@@ -23,6 +23,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Advanced Security Syndicate" }],
   creator: "Advanced Security Syndicate",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+  alternates: {
+    canonical: "https://assyndicate.com",
+  },
   openGraph: {
     title: "Advanced Security Syndicate — Certified Security Solutions",
     description:

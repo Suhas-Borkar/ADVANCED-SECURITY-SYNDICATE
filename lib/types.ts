@@ -10,6 +10,7 @@ export interface Brand {
   foundedYear: string;
   relationshipType: "Authorized National Distributor" | "Regional Distributor" | "Strategic Alliance";
   website: string;
+  content: "cover" | "contain" | "fill" | "none" | "scale-down";
 }
 
 export interface Service {
