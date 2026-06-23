@@ -1,43 +1,36 @@
 # PROJECT SUMMARY: ADVANCED SECURITY SYNDICATE
 
 ## 📋 Overview
-**Advanced Security Syndicate** is a modern React-based web application built with TypeScript and Vite that serves as a digital platform for **ACGR India Private Limited** - a premium security and telecom distribution company.
+**Advanced Security Syndicate** is a modern Next.js application built with React and TypeScript for **ACGR India Private Limited**, a premium security and telecom distribution company.
 
-**Project Name:** React Example  
-**Version:** 0.0.0  
-**Type:** SPA (Single Page Application)  
+**Project Name:** ACGR India Next.js  
+**Version:** 0.1.0  
+**Type:** Multi-page marketing and partner portal  
 **Status:** Under Development
 
 ---
 
 ## 🎯 Purpose
-This is a corporate branding and business platform for ACGR India, which is:
-- **Authorized National & Regional Surveillance Distributor** (Established: 2021)
-- Certified Direct Channel Partner specializing in CCTV security cameras, EPABX servers, surveillance storage, networking equipment, and accessories
-- Operating across Central & Western India with presence in 40+ cities
-- Serving 5,000+ channel sub-dealers and retailers
+This project serves as a corporate digital presence for ACGR India, focused on:
+- Authorized distribution of security surveillance, storage, networking, and telecom products
+- Showcasing partner brand portfolios and value-added services
+- Collecting dealer/distributor inquiries through a contact form
+- Publishing legal pages such as Terms & Conditions and Privacy Policy
 
 ---
 
 ## 🏗️ Technology Stack
 
 ### Frontend Framework
+- **Next.js** 15.3.0 - React-based server-rendered framework
 - **React** 19.0.1 - UI library
 - **TypeScript** ~5.8.2 - Type-safe development
-- **Vite** 6.2.3 - Build tool and dev server (port 3000)
 - **TailwindCSS** 4.1.14 - Utility-first CSS framework
-- **Lucide React** 0.546.0 - Icon library
-
-### Backend/Additional
-- **Express** 4.21.2 - Minimal server for deployment
-- **Motion** 12.23.24 - Animation library
-- **Google GenAI** 2.4.0 - AI/LLM integration capabilities
-- **dotenv** 17.2.3 - Environment variable management
+- **Lucide React** ^0.546.0 - Icon library
+- **motion** ^12.23.24 - Animation library
 
 ### Development Tools
-- **tsx** 4.21.0 - TypeScript executor
-- **Autoprefixer** 10.4.21 - CSS vendor prefixing
-- **esbuild** 0.25.0 - JavaScript bundler
+- **npm** scripts for build, dev, and lint workflows
 
 ---
 
@@ -45,92 +38,94 @@ This is a corporate branding and business platform for ACGR India, which is:
 
 ```
 ADVANCED-SECURITY-SYNDICATE/
-├── src/
-│   ├── App.tsx                 # Main application component
-│   ├── main.tsx                # Entry point
-│   ├── index.css               # Global styles
-│   ├── types.ts                # TypeScript interfaces
-│   ├── data.ts                 # Static data and constants
-│   ├── assets/images/          # Image assets
-│   └── components/             # React components
-│       ├── Header.tsx          # Navigation header
-│       ├── Footer.tsx          # Footer section
-│       ├── HomeView.tsx        # Landing page
-│       ├── AboutView.tsx       # Company information
-│       ├── BrandsView.tsx      # Brand portfolio display
-│       ├── PerformanceView.tsx # Performance metrics
-│       └── ContactView.tsx     # Inquiry/contact form
-├── index.html                  # HTML entry point
-├── vite.config.ts              # Vite configuration
-├── tsconfig.json               # TypeScript configuration
-├── package.json                # Dependencies and scripts
-├── metadata.json               # AI Studio metadata
-├── README.md                   # Quick start guide
-└── .env.local                  # Environment variables (GEMINI_API_KEY)
+├── app/                       # Next.js app routes and pages
+│   ├── about/page.tsx         # About page
+│   ├── brands/page.tsx        # Brand portfolio page
+│   ├── contact/page.tsx       # Contact page
+│   ├── performance/page.tsx   # Performance page
+│   ├── terms/page.tsx         # Terms & Conditions page
+│   ├── privacy-policy/page.tsx# Privacy Policy page
+│   ├── layout.tsx             # Root layout and shared UI
+│   ├── globals.css            # Global CSS
+│   └── page.tsx               # Home page
+├── components/                # Shared interface components
+│   ├── AboutView.tsx
+│   ├── BrandsView.tsx
+│   ├── ContactView.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── HomeView.tsx
+│   ├── PerformanceView.tsx
+│   ├── PrivacyPolicyView.tsx
+│   ├── Terms&ConditionsView.tsx
+│   └── BrochureModal.tsx
+├── lib/                       # Shared data, types, and context
+│   ├── data.ts
+│   ├── types.ts
+│   └── BrochureContext.tsx
+├── public/                    # Static assets and brand logos
+│   ├── distributors/
+│   └── logo/
+├── package.json               # Dependencies and scripts
+├── tsconfig.json              # TypeScript configuration
+├── README.md                  # Project overview and setup
+├── PROJECT_SUMMARY.md         # Current project summary
+└── .gitignore                 # Git ignore rules
 ```
 
 ---
 
 ## 🔌 Core Features
 
-### 1. **Multi-Page SPA Navigation**
-- Home: Landing page and company introduction
-- About: Company background and credentials
-- Brands: Partner brands portfolio (7 brands showcase)
-- Performance: Business metrics and achievements
-- Contact: Inquiry form for consultations
+### 1. Multi-page Navigation
+- `/` — Home landing page
+- `/about` — Company background
+- `/brands` — Authorized partner brands
+- `/performance` — Business metrics and achievements
+- `/contact` — Distributor inquiry form
+- `/terms` — Terms & Conditions
+- `/privacy-policy` — Privacy Policy
 
-### 2. **Brand Portfolio**
-Displays 7 partner brands across categories:
-- **Cameras:** Hikvision, Prama, CP Plus
-- **Storage:** Seagate
-- **Networking:** Cofe
-- **Telecom:** Syntel
-- **Accessories:** Connect-G
+### 2. Brand Portfolio
+Displays partner brands across categories such as:
+- Cameras
+- Storage
+- Networking
+- Telecom
+- Accessories
 
-### 3. **Services**
-- CCTV Surveillance Solutions
-- Enterprise Telecom & IP-PBX Systems
-- Storage & NVR Infrastructure
-- Network Equipment Distribution
-- Custom Integration & Support
+### 3. Services
+- CCTV surveillance solutions
+- High-payload storage systems
+- Networking & optical infrastructure
+- Telecom and IP-PBX solutions
 
-### 4. **Business Features**
-- Digital brochure download capability
-- Consultation booking system
-- Multi-tier user classification (Distributor, Sub-Distributor, System Integrator, Retailer, End-User)
-- Regional dealer network information
-- Testimonials and case studies
-- Leadership team display
-
-### 5. **AI Integration**
-- Google Gemini API integration enabled
-- Potential for intelligent customer interaction features
+### 4. Business and User Features
+- Dynamic brand filtering and inquiry links
+- Contact form with validation and ticket generation
+- Downloadable brochure interactions
+- Responsive layout for desktop and mobile
+- SEO metadata for pages
 
 ---
 
 ## 📊 Key Data Entities
 
-### Brand Interface
-- ID, name, logo, description, category
-- Featured products, founding year
-- Relationship type, website
-- Long-form descriptions
+### Brand Data
+- id, name, logo/icon, image
+- description and long description
+- category, featured products
+- relationship type and website
+- founded year
 
-### Service Interface
-- Title, icon, description
-- Feature list, detailed information
+### Service Data
+- service title, icon, description
+- feature list and details
 
-### Customer Inquiry Form
-- Contact information (name, email, phone)
-- Location details
-- User type classification
-- Message and brand interests
-
-### Other Entities
-- Testimonials (reviews with ratings)
-- Leader profiles (team members)
-- Dealer regions (geographic coverage)
+### Inquiry Form
+- name, phone, email
+- city, user type, subject, message
+- brands of interest
 
 ---
 
@@ -138,65 +133,49 @@ Displays 7 partner brands across categories:
 
 | Command | Purpose |
 |---------|---------|
-| `npm run dev` | Start dev server on port 3000 (accessible on 0.0.0.0) |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run clean` | Remove dist and server.js |
-| `npm run lint` | TypeScript type checking |
+| `npm run dev` | Start Next.js dev server on port 3000 |
+| `npm run build` | Build production app |
+| `npm start` | Run production server after build |
+| `npm run lint` | Run lint checks |
 
 ---
 
 ## ⚙️ Configuration
 
-### Development Server
-- **Host:** 0.0.0.0 (accessible from any interface)
+### Development
 - **Port:** 3000
-- **Module Type:** ES6 modules
+- **Framework:** Next.js app router
+- **Styling:** TailwindCSS with global and component styles
 
 ### Build Output
-- Production builds to `dist/` directory
-- Supports TypeScript strict mode checking via `tsc --noEmit`
+- Build artifacts are generated under `.next/`
+- The project uses the Next.js production build process
 
 ---
 
-## 🔐 Environment Variables Required
-- **GEMINI_API_KEY** - Set in `.env.local` for Google Gemini API access
+## 🔐 Notes
+- The repository currently contains both the active `app/` Next.js application and legacy `src/` Vite-based React app files.
+- New legal pages were added: `/terms` and `/privacy-policy`.
 
 ---
 
-## 📈 Business Context
-
-**ACGR India Company Profile:**
-- **Cumulative Business:** ₹250+ Crore
-- **Network:** 5,000+ channel retailers
-- **Partnerships:** 10+ global/domestic brands
-- **Coverage:** 40+ cities
-- **CIN:** U31909MH2021PTCXXXXXX (Maharashtra registration)
-
----
-
-## 🎨 Design & UX
-
-- **Framework:** TailwindCSS utility-first approach
-- **Icons:** Lucide React (Download, X, Printer, Shield, CheckCircle, HeartHandshake)
-- **Animations:** Motion library for smooth interactions
-- **Responsive:** Mobile and desktop optimized
-- **Accessibility:** Built-in semantic HTML structure
+## 📈 Current Status
+- **Home page:** live in `app/page.tsx`
+- **About page:** `app/about/page.tsx`
+- **Brands page:** `app/brands/page.tsx`
+- **Performance page:** `app/performance/page.tsx`
+- **Contact page:** `app/contact/page.tsx`
+- **Terms page:** `app/terms/page.tsx`
+- **Privacy policy page:** `app/privacy-policy/page.tsx`
+- **Brand data and UI:** updated via `lib/data.ts` and `components/BrandsView.tsx`
 
 ---
 
-## 🔄 Current Capabilities
+## 📌 Pending Tasks
+- Add footer navigation links for `/terms` and `/privacy-policy` if needed
+- Clean up legacy `src/` directory and `.next/` build artifacts before committing
+- Add new brand entries to `lib/data.ts` as requested
 
-✅ Multi-page navigation system  
-✅ Brand showcase with detailed information  
-✅ Service listing and descriptions  
-✅ Contact/inquiry form system  
-✅ Digital brochure generation  
-✅ Responsive design foundation  
-✅ TypeScript type safety  
-✅ Google Gemini API integration setup  
-
----
 
 ## 📝 Next Steps & Recommendations
 
