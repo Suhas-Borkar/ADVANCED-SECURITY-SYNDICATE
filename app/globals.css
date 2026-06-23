@@ -7,16 +7,23 @@
   --font-space: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  --color-brand-50: #f4f8fa;
-  --color-brand-100: #e5f1f5;
-  --color-brand-200: #c0dfeb;
-  --color-brand-300: #88c2db;
-  --color-brand-400: #4ba0c6;
-  --color-brand-500: #1b80ab;
-  --color-brand-600: #0f668c;
-  --color-brand-700: #0b5070;
-  --color-brand-800: #083c55;
-  --color-brand-900: #062f43;
+  /* Brand Red — extracted from Advanced Security Syndicate logo */
+  --color-brand-50:  #fff1f0;
+  --color-brand-100: #ffe3e0;
+  --color-brand-200: #ffcbc5;
+  --color-brand-300: #ffa098;
+  --color-brand-400: #ff6b60;
+  --color-brand-500: #f03830;
+  --color-brand-600: #c41c1c;
+  --color-brand-700: #a31515;
+  --color-brand-800: #861212;
+  --color-brand-900: #6e1212;
+
+  /* Accent Orange — from the horizontal stripe in the logo */
+  --color-accent-300: #fcd07a;
+  --color-accent-400: #f5a623;
+  --color-accent-500: #e8920a;
+  --color-accent-600: #c97800;
 }
 
 @layer base {
@@ -26,8 +33,13 @@
 }
 
 .bg-grid-mesh {
-  background-image: radial-gradient(circle at 1px 1px, rgba(15, 102, 140, 0.08) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(196, 28, 28, 0.07) 1px, transparent 0);
   background-size: 24px 24px;
+}
+
+/* Orange-red diagonal accent bar — mirrors logo stripe */
+.bg-brand-stripe {
+  background: linear-gradient(105deg, #c41c1c 0%, #f5a623 60%, #f5a623 80%, #c41c1c 100%);
 }
 
 .bg-dot-mesh {

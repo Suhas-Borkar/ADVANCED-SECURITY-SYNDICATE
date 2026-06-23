@@ -25,10 +25,10 @@ export default function HomeView() {
   }, []);
 
   const stats = [
-    { value: "₹250+ Cr", label: "Business Transacted", sub: "Since inception in 2021" },
-    { value: "10+", label: "Brand Partnerships", sub: "Global & Domestic brands" },
-    { value: "5000+", label: "Retail Locations", sub: "Active channel dealers" },
-    { value: "40+", label: "Indian Cities", sub: "Central & Western distribution" },
+    { value: "₹168 Cr+", label: "Revenue FY 2025–26", sub: "6× growth in two fiscal years" },
+    { value: "11+", label: "Brand Partnerships", sub: "Regional distribution alliances" },
+    { value: "Top #10", label: "Surveillance Distributor", sub: "Ranked region-wise in India" },
+    { value: "Since 2021", label: "Established & Growing", sub: "₹27 Cr → ₹168 Cr in 2 years" },
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function HomeView() {
               className="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/30 text-brand-400 px-3 py-1.5 rounded-full text-xs font-mono tracking-wider uppercase mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-brand-400 animate-pulse" />
-              National & Regional Security Distributor
+              Certified Security Solutions Provider
             </motion.div>
 
             <motion.h1
@@ -65,7 +65,7 @@ export default function HomeView() {
               className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-white leading-[1.1]"
             >
               Your Trusted Security <br className="hidden sm:inline" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-sky-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-400">
                 & Surveillance Partner
               </span>
             </motion.h1>
@@ -76,7 +76,7 @@ export default function HomeView() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed font-sans font-light"
             >
-              ACGR India connects premium global manufacturers with local system integrators. Driving secure domestic logistics, certified warranties, and technical training.
+              Advanced Security Syndicate connects premium global manufacturers with local system integrators — delivering secure logistics, certified warranties, and expert technical training.
             </motion.p>
 
             <motion.div
@@ -131,13 +131,13 @@ export default function HomeView() {
               Established 2021
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-black tracking-tight text-slate-900">
-              Leading the Distribution Industry for Over 3+ Years
+              Advanced Security Solutions for a Safer Tomorrow
             </h2>
             <p className="text-base text-slate-600 font-sans leading-relaxed">
-              Formed to satisfy India's rapid demand for specialized smart surveillance solutions, ACGR India Private Limited has expanded from regional supply channels into a strong distribution ecosystem.
+              Advanced Security Syndicate was built to meet the growing demand for specialized, smart surveillance and security solutions — expanding from targeted projects into a comprehensive security ecosystem.
             </p>
             <p className="text-base text-slate-600 font-sans leading-relaxed">
-              We stand apart through robust physical stock availability, eliminating standard shipment backlogs, and offering local regional center diagnostics and warranty replacements.
+              We stand apart through robust physical stock availability, eliminating standard shipment backlogs, and offering local diagnostics, warranty replacements, and dedicated partner support.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               {[
@@ -164,15 +164,15 @@ export default function HomeView() {
                   <Award className="w-8 h-8 text-brand-600" />
                 </div>
                 <div>
-                  <h4 className="font-display font-bold text-lg text-slate-900">National Distributor Seal</h4>
-                  <p className="text-xs font-mono text-slate-500">CERTIFICATE NO: ACGR-IN2021B</p>
+                  <h4 className="font-display font-bold text-lg text-slate-900">Certified Security Provider Seal</h4>
+                  <p className="text-xs font-mono text-slate-500">CERTIFICATE NO: ASS-SEC2024A</p>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="p-4 bg-brand-50/50 rounded-xl border border-brand-100 flex justify-between items-center">
                   <div>
                     <span className="block text-xs font-mono text-brand-800 font-bold uppercase">Direct Brand Access</span>
-                    <span className="text-sm text-slate-700 font-medium font-sans">Authorized Regional Partner Hikvision & Prama</span>
+                    <span className="text-sm text-slate-700 font-medium font-sans">Authorized Partner — Hikvision & Prama</span>
                   </div>
                   <span className="text-xs bg-brand-600 text-white font-mono px-2 py-0.5 rounded font-medium">VERIFIED</span>
                 </div>
@@ -204,22 +204,27 @@ export default function HomeView() {
               AUTHORIZED DISTRIBUTION SYSTEM & NETWORK
             </span>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-12 md:gap-16">
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
             {BRANDS.map((brand) => (
               <div
                 key={brand.id}
                 onClick={() => setSelectedBrand(brand)}
-                className="flex items-center gap-2 bg-slate-50 hover:bg-brand-50 border border-slate-200/80 hover:border-brand-200 p-3 px-5 rounded-xl cursor-pointer transition-all duration-200 group shadow-sm"
+                className="flex flex-col items-center gap-4 bg-white hover:bg-brand-50 border border-slate-200/80 hover:border-brand-300 hover:shadow-md p-2 rounded-2xl cursor-pointer transition-all duration-200 group shadow-sm"
               >
-                <span className="text-2xl group-hover:scale-110 transition-transform">{brand.logo}</span>
-                <span className="font-display font-bold text-slate-950 text-sm sm:text-base">{brand.name}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-brand-600 transition-colors" />
+                <div className="w-full h-30 flex items-center justify-center">
+                  {brand.image ? (
+                    <img src={brand.image} alt={brand.name} className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-200" />
+                  ) : (
+                    <span className="text-5xl group-hover:scale-110 transition-transform">{brand.logo}</span>
+                  )}
+                </div>
+                <span className="font-display font-semibold text-slate-700 text-sm text-center leading-tight">{brand.name}</span>
               </div>
             ))}
           </div>
-          <p className="text-center text-xs text-slate-500 font-sans mt-4">
+          {/* <p className="text-center text-xs text-slate-500 font-sans mt-4">
             *Click on any strategic brand logo to view certified product catalogs and regional distributor roles.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -281,10 +286,10 @@ export default function HomeView() {
               TRUSTED ENGAGEMENTS
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
-              What Sets ACGR India Apart?
+              What Sets Advanced Security Syndicate Apart?
             </h2>
             <p className="text-slate-500 text-sm sm:text-base font-sans">
-              Three years of outstanding channel growth built on reliable delivery and authentic commercial pricing.
+              Outstanding growth built on reliable delivery, genuine products, and authentic commercial partnerships.
             </p>
           </div>
           <div className="text-left lg:text-right">
@@ -340,9 +345,9 @@ export default function HomeView() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             {[
-              { step: "01", label: "Source Globally", desc: "Securing inventory volume contracts directly with Hikvision, Seagate, Syntel, Prama, and CP Plus manufacturers." },
-              { step: "02", label: "Stored Safely", desc: "Inventory holds housed within temperature-controlled dust-free central warehouses in Western India." },
-              { step: "03", label: "Fast Regional Delivery", desc: "Dispatch same-day utilizing express cargo lanes delivering directly to dealers and system integrators." },
+              { step: "01", label: "Source Directly", desc: "Volume contracts with CP Plus, Seagate, Syntel, D-Link, TP-Link, iVOOMi and other brand principals." },
+              { step: "02", label: "Stocked Locally", desc: "Inventory housed in our Pune-based hub, enabling rapid fulfilment across Maharashtra and beyond." },
+              { step: "03", label: "Fast Regional Delivery", desc: "Same-day dispatch via express cargo directly to channel partners, dealers, and system integrators." },
             ].map((step, sIdx) => (
               <div
                 key={sIdx}
@@ -361,7 +366,7 @@ export default function HomeView() {
 
       {/* 8. Testimonials */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-brand-900 to-indigo-950 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">
+        <div className="bg-gradient-to-r from-brand-900 to-brand-700 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">
           <div className="absolute inset-0 bg-grid-mesh opacity-10" />
           <Stars className="absolute right-8 top-8 w-12 h-12 text-brand-400/20" />
           <div className="relative max-w-3xl">
@@ -410,7 +415,13 @@ export default function HomeView() {
           <div className="bg-white rounded-3xl border border-slate-200 w-full max-w-2xl overflow-hidden shadow-2xl animate-scale-up">
             <div className="p-6 bg-slate-900 text-white flex justify-between items-center relative">
               <div className="flex items-center gap-3">
-                <span className="text-3xl">{selectedBrand.logo}</span>
+                <div className="w-16 h-10 bg-white rounded-xl flex items-center justify-center p-1.5 shrink-0">
+                  {selectedBrand.image ? (
+                    <img src={selectedBrand.image} alt={selectedBrand.name} className="w-full h-full object-contain" />
+                  ) : (
+                    <span className="text-2xl">{selectedBrand.logo}</span>
+                  )}
+                </div>
                 <div>
                   <h3 className="font-display font-bold text-xl">{selectedBrand.name}</h3>
                   <span className="text-[10px] font-mono text-brand-300 tracking-wider font-semibold uppercase">

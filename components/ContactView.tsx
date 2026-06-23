@@ -13,7 +13,6 @@ export default function ContactView() {
   const searchParams = useSearchParams();
   const initialBrandInterest = searchParams.get("brand") ?? "";
 
-  const [selectedOffice, setSelectedOffice] = useState<"head" | "regional" | "central">("head");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [ticketId, setTicketId] = useState("");
   const [formData, setFormData] = useState<InquiryFormState>({
@@ -29,30 +28,12 @@ export default function ContactView() {
   const [formErrors, setFormErrors] = useState<Partial<InquiryFormState>>({});
 
   const officeDetails = {
-    head: {
-      title: "ACGR Corporate headquarters",
-      address: "ACGR Building, Civil Lines Zone, Nagpur, Maharashtra - 440001",
-      phone: "+91 91580 XXXXX / 0712 - 25XXXX",
-      email: "info@acgr.in",
-      locationHint: "Near High-Court Square, Central Business District",
-      coords: "LAT: 21.1458° N, LON: 79.0882° E"
-    },
-    regional: {
-      title: "Indore Distribution branch",
-      address: "Alliance Trade House, Vijay Nagar Ring Road, Indore, Madhya Pradesh - 452010",
-      phone: "+91 94222 XXXXX / 0731 - 40XXXX",
-      email: "mp.sales@acgr.in",
-      locationHint: "Behind Corporate Square Plaza",
-      coords: "LAT: 22.7533° N, LON: 75.8937° E"
-    },
-    central: {
-      title: "Central Logistics Warehouse Hub",
-      address: "Apex Logistics Yards, Kalamboli industrial park, Navi Mumbai, Maharashtra - 410218",
-      phone: "+91 98200 XXXXX",
-      email: "logistics@acgr.in",
-      locationHint: "Close to Nhava Sheva JNPT Shipping Corridor",
-      coords: "LAT: 19.0284° N, LON: 73.1025° E"
-    }
+    title: "Advanced Security Syndicate — Headquarters",
+    address: "Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune – 411027",
+    phone: "+91 9689147700",
+    email: "advancescrtcp55@gmail.com",
+    locationHint: "Opp Union Bank, New Sangavi, Pune",
+    coords: "LAT: 18.5626° N, LON: 73.7884° E"
   };
 
   const handleBrandSelect = (brandName: string) => {
@@ -123,11 +104,11 @@ export default function ContactView() {
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-lg">Engineered for Security</h4>
-                  <p className="text-[10px] font-mono text-slate-500 uppercase">AUTHORIZED ACGR SEAL</p>
+                  <p className="text-[10px] font-mono text-slate-500 uppercase">ADVANCED SECURITY SYNDICATE — CERTIFIED</p>
                 </div>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed font-sans mt-2">
-                As certified partners in Central and Western India, we stand as authorized distributors ensuring direct hardware supply security and premium billing terms.
+                Advanced Security Syndicate delivers certified security solutions — ensuring direct supply chain integrity, genuine products, and premium client support.
               </p>
             </div>
 
@@ -136,50 +117,31 @@ export default function ContactView() {
                 <Landmark className="w-5 h-5 text-brand-600" />
                 Office Localization Desk
               </h3>
-              <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-xl">
-                {[
-                  { id: "head", label: "Nagpur HQ" },
-                  { id: "regional", label: "Indore" },
-                  { id: "central", label: "Mumbai Port" },
-                ].map((off) => (
-                  <button
-                    key={off.id}
-                    onClick={() => setSelectedOffice(off.id as "head" | "regional" | "central")}
-                    className={`py-2 px-1 text-center font-sans tracking-wide text-xs font-semibold rounded-lg transition-all ${
-                      selectedOffice === off.id
-                        ? "bg-white text-slate-900 shadow-sm"
-                        : "text-slate-500 hover:text-slate-950"
-                    }`}
-                  >
-                    {off.label}
-                  </button>
-                ))}
-              </div>
               <div className="space-y-4 pt-2">
                 <div>
                   <span className="text-[10px] uppercase font-mono font-bold text-slate-400 block tracking-wider">
-                    {officeDetails[selectedOffice].title}
+                    {officeDetails.title}
                   </span>
                   <p className="text-sm font-semibold text-slate-800 font-sans mt-1">
-                    {officeDetails[selectedOffice].address}
+                    {officeDetails.address}
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-xs">
                   <div>
                     <span className="text-[9px] uppercase font-mono text-slate-400 block">CALL CONTACT:</span>
-                    <span className="font-mono font-bold text-slate-700 mt-0.5 block">{officeDetails[selectedOffice].phone}</span>
+                    <span className="font-mono font-bold text-slate-700 mt-0.5 block">{officeDetails.phone}</span>
                   </div>
                   <div>
                     <span className="text-[9px] uppercase font-mono text-slate-400 block">SUPPORT DESK EMAIL:</span>
-                    <span className="font-mono font-bold text-brand-600 mt-0.5 block break-all">{officeDetails[selectedOffice].email}</span>
+                    <span className="font-mono font-bold text-brand-600 mt-0.5 block break-all">{officeDetails.email}</span>
                   </div>
                 </div>
                 <div className="p-3 bg-brand-50/50 rounded-xl border border-brand-100 flex gap-2 text-[11px] text-slate-600 leading-relaxed items-start">
                   <Compass className="w-4 h-4 text-brand-600 mt-0.5 shrink-0" />
                   <div>
-                    <span><strong>Location Guide:</strong> {officeDetails[selectedOffice].locationHint}</span>
+                    <span><strong>Location Guide:</strong> {officeDetails.locationHint}</span>
                     <span className="block font-mono text-[9px] font-bold text-brand-800 uppercase mt-0.5">
-                      GPS LOG: {officeDetails[selectedOffice].coords}
+                      GPS LOG: {officeDetails.coords}
                     </span>
                   </div>
                 </div>
@@ -245,7 +207,7 @@ export default function ContactView() {
                       className={`w-full p-3 bg-slate-50 border rounded-xl outline-none text-sm transition-all text-slate-800 ${
                         formErrors.email ? "border-red-500 bg-red-50/20" : "border-slate-200 focus:border-brand-500 focus:bg-white"
                       }`}
-                      placeholder="e.g. partners@acgr.in"
+                      placeholder="e.g. partners@advancedsecurity.in"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     />
@@ -357,7 +319,7 @@ export default function ContactView() {
                 <div className="space-y-2">
                   <h3 className="font-display font-extrabold text-3xl text-slate-900">THANK YOU!</h3>
                   <p className="text-slate-500 text-sm max-w-sm mx-auto font-sans leading-relaxed">
-                    We appreciate your interest in ACGR India. Our distribution desk will review your tax details and reach out within 24 working hours.
+                    We appreciate your interest in Advanced Security Syndicate. Our team will review your inquiry and reach out within 24 working hours.
                   </p>
                 </div>
                 <div className="p-5 bg-slate-50 border rounded-2xl max-w-md mx-auto space-y-3">
@@ -383,7 +345,7 @@ export default function ContactView() {
                     Submit Another Inquiry
                   </button>
                   <a
-                    href="mailto:sales@acgr.in"
+                    href="mailto:sales@advancedsecurity.in"
                     className="px-6 py-3 bg-slate-900 hover:bg-brand-600 text-white font-display font-semibold rounded-xl text-xs transition-colors inline-block"
                   >
                     Direct Email Desk

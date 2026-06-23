@@ -2,6 +2,7 @@ export interface Brand {
   id: string;
   name: string;
   logo: string;
+  image?: string;
   description: string;
   longDescription: string;
   category: "Camera" | "Storage" | "Networking" | "Telecom" | "Accessories";

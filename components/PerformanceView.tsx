@@ -47,7 +47,7 @@ export default function PerformanceView() {
 
   const handleDownloadReport = () => {
     const reportText = `----------------------------------------
-ACGR INDIA - TECHNICAL CALCULATOR BULLETIN
+ADVANCED SECURITY SYNDICATE - TECHNICAL CALCULATOR
 SYSTEM PROJECT ESTIMATION REPORT
 ----------------------------------------
 Project Profile: Surveillance Integration Assessment
@@ -66,10 +66,10 @@ ESTIMATION METRICS OUTPUTS:
 - Recommended Surveillance Drive Model: ${recommendation.model}
 - Model Identifier: ${recommendation.code} (${recommendation.cache}, ${recommendation.rpm})
 
-AUTHORIZED DISTRIBUTION CONTACT:
-For bulk dealer billing, hardware contracts and immediate local dispatches:
-• Email desk: sales@acgr.in
-• Official Portal Support: info@acgr.in
+CONTACT ADVANCED SECURITY SYNDICATE:
+For bulk orders, hardware contracts and immediate dispatch support:
+• Email desk: sales@advancedsecurity.in
+• Official Portal Support: info@advancedsecurity.in
 • Quality Verified Seal: 100% Genuine Seagate SkyHawk Partner
 ----------------------------------------`;
 
@@ -77,7 +77,7 @@ For bulk dealer billing, hardware contracts and immediate local dispatches:
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = `ACGR_Surveillance_Estimation_${cameraCount}_Cams.txt`;
+    link.download = `ASS_Surveillance_Estimation_${cameraCount}_Cams.txt`;
     link.click();
     URL.revokeObjectURL(url);
   };
@@ -269,7 +269,7 @@ For bulk dealer billing, hardware contracts and immediate local dispatches:
           </div>
 
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-gradient-to-br from-brand-900 to-indigo-950 text-white rounded-3xl p-8 shadow-lg relative overflow-hidden">
+            <div className="bg-gradient-to-br from-brand-900 to-brand-700 text-white rounded-3xl p-8 shadow-lg relative overflow-hidden">
               <div className="absolute inset-0 bg-grid-mesh opacity-10" />
               <span className="bg-white/10 text-brand-300 text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded border border-white/10">
                 CALCULATED PAYLOAD

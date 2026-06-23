@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { Shield, Menu, X, PhoneCall } from "lucide-react";
+import { Menu, X, PhoneCall } from "lucide-react";
 
 const navItems = [
   { id: "home", label: "Home", href: "/" },
   { id: "about", label: "About Us", href: "/about" },
-  { id: "brands", label: "Top Brands", href: "/brands" },
+  { id: "brands", label: "Distributors", href: "/brands" },
   { id: "performance", label: "Performance & Tools", href: "/performance" },
   { id: "contact", label: "Contact Us", href: "/contact" },
 ];
@@ -34,20 +34,11 @@ export default function Header() {
             onClick={() => handleNavClick("/")}
             className="flex items-center gap-3 cursor-pointer group"
           >
-            <div className="bg-brand-600 group-hover:bg-brand-700 text-white p-2.5 rounded-lg shadow-md shadow-brand-600/20 transition-all">
-              <Shield className="w-6 h-6 stroke-[2]" />
-            </div>
-            <div>
-              <div className="flex items-baseline gap-1.5">
-                <span className="font-display font-bold text-2xl tracking-tight text-slate-900">ACGR</span>
-                <span className="font-space font-medium text-xs tracking-wider text-brand-600 uppercase bg-brand-50 px-1.5 py-0.5 rounded border border-brand-200">
-                  India
-                </span>
-              </div>
-              <span className="text-[10px] font-medium text-slate-500 uppercase tracking-widest block -mt-0.5">
-                Surveillance Distribution
-              </span>
-            </div>
+            <img
+              src="/logo/logo.jpeg"
+              alt="Advanced Security Syndicate"
+              className="h-12 w-auto object-contain group-hover:opacity-90 transition-opacity"
+            />
           </div>
 
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">

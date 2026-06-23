@@ -3,18 +3,15 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
-  Search, ArrowUpRight, Check, Map
+  Search, ArrowUpRight, Check
 } from "lucide-react";
-import { BRANDS, DEALE_REGIONS } from "@/lib/data";
+import { BRANDS } from "@/lib/data";
 
 export default function BrandsView() {
   const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedState, setSelectedState] = useState("All");
-
   const categories = ["All", "Camera", "Storage", "Networking", "Telecom", "Accessories"];
-  const indianStates = ["All", "Maharashtra", "Gujarat", "Madhya Pradesh", "Chhattisgarh", "Goa"];
 
   const filteredBrands = BRANDS.filter((b) => {
     const matchesCategory = selectedCategory === "All" || b.category === selectedCategory;
@@ -23,10 +20,6 @@ export default function BrandsView() {
       b.description.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
-
-  const filteredDealers = DEALE_REGIONS.filter((d) =>
-    selectedState === "All" || d.state === selectedState
-  );
 
   return (
     <div className="bg-slate-50 min-h-screen">
@@ -39,7 +32,7 @@ export default function BrandsView() {
           </span>
           <h1 className="font-display text-4xl sm:text-5xl font-black tracking-tight">
             Powering India's Security <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-sky-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-400">
               Infrastructure
             </span>
           </h1>
@@ -93,9 +86,13 @@ export default function BrandsView() {
               <div className="space-y-6">
                 <div className="flex items-start justify-between border-b border-slate-100 pb-5">
                   <div className="flex items-center gap-4">
-                    <span className="text-4xl bg-slate-50 border border-slate-200 w-14 h-14 rounded-2xl flex items-center justify-center p-2 shadow-sm">
-                      {brand.logo}
-                    </span>
+                    <div className="bg-white border border-slate-200 w-24 h-16 rounded-2xl flex items-center justify-center p-2.5 shadow-sm overflow-hidden shrink-0">
+                      {brand.image ? (
+                        <img src={brand.image} alt={brand.name} className="w-full h-full object-contain" />
+                      ) : (
+                        <span className="text-4xl">{brand.logo}</span>
+                      )}
+                    </div>
                     <div>
                       <h3 className="font-display font-black text-xl text-slate-900">{brand.name}</h3>
                       <span className="text-[10px] font-mono text-slate-500 font-bold uppercase block mt-0.5">
@@ -157,89 +154,6 @@ export default function BrandsView() {
         </div>
       </section>
 
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-mesh opacity-10" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
-            <div className="lg:col-span-7 space-y-4">
-              <div className="inline-flex items-center gap-1.5 bg-brand-500/15 border border-brand-500/30 text-brand-300 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider">
-                <Map className="w-3.5 h-3.5" />
-                Regional Partner Registry
-              </div>
-              <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">
-                Locate a Nearby Channel Partner
-              </h2>
-              <p className="text-slate-400 text-xs sm:text-sm font-sans leading-relaxed">
-                Looking to purchase immediate stock from nearby regional hubs? Scan our network registry of verified regional sub-distributors across West & Central India.
-              </p>
-            </div>
-            <div className="lg:col-span-5 space-y-1.5">
-              <label className="text-xs font-mono font-bold text-slate-400 block uppercase">
-                Filter Dealers By Indian State:
-              </label>
-              <div className="flex flex-wrap gap-2">
-                {indianStates.map((st) => (
-                  <button
-                    key={st}
-                    onClick={() => setSelectedState(st)}
-                    className={`px-4 py-2 rounded-xl text-xs font-mono font-semibold tracking-wider transition-colors border ${
-                      selectedState === st
-                        ? "bg-brand-600 border-brand-500 text-white"
-                        : "bg-slate-800 border-slate-700 text-slate-400 hover:text-white"
-                    }`}
-                  >
-                    {st}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
-            <div className="p-4 bg-slate-700 border-b border-slate-600 hidden sm:grid sm:grid-cols-12 text-xs font-mono font-bold text-slate-400 uppercase tracking-widest gap-4">
-              <span className="sm:col-span-3">State / City</span>
-              <span className="sm:col-span-4">Dealer Name</span>
-              <span className="sm:col-span-3">Assigned Area Coverage</span>
-              <span className="sm:col-span-2 text-right">RMA Desk Hotline</span>
-            </div>
-            <div className="divide-y divide-slate-700 max-h-[460px] overflow-y-auto">
-              {filteredDealers.map((d, index) => (
-                <div
-                  key={index}
-                  className="p-5 sm:p-4 grid grid-cols-1 sm:grid-cols-12 gap-3 sm:gap-4 text-xs sm:text-sm font-sans hover:bg-slate-700/40 transition-colors"
-                >
-                  <div className="sm:col-span-3 flex sm:flex-col justify-between sm:justify-center border-b sm:border-0 border-slate-700 pb-2 sm:pb-0">
-                    <span className="font-mono text-xs text-brand-300 font-bold uppercase sm:tracking-wider">{d.state}</span>
-                    <span className="text-white font-bold tracking-tight">{d.city}</span>
-                  </div>
-                  <div className="sm:col-span-4 flex flex-col justify-center">
-                    <span className="text-slate-100 font-semibold text-sm">{d.dealerName}</span>
-                    <span className="text-slate-500 text-[10px] uppercase font-mono tracking-widest mt-0.5">AUTHORIZED CHANNEL TIER 1</span>
-                  </div>
-                  <div className="sm:col-span-3 flex flex-col justify-center text-slate-400">
-                    <span className="text-xs">{d.coverage}</span>
-                  </div>
-                  <div className="sm:col-span-2 flex items-center justify-between sm:justify-end gap-2 shrink-0">
-                    <span className="sm:hidden text-xs text-slate-400 uppercase font-mono">hotline:</span>
-                    <span className="font-mono text-brand-300 font-bold text-xs sm:text-sm text-right bg-slate-700 px-3 py-1 sm:p-0 rounded border border-slate-600 sm:border-0">
-                      {d.contact}
-                    </span>
-                  </div>
-                </div>
-              ))}
-              {filteredDealers.length === 0 && (
-                <div className="text-center py-16 text-slate-500">
-                  No active strategic channel sub-distributors registered in this specific region yet. Contact ACGR Corporate headquarters directly.
-                </div>
-              )}
-            </div>
-          </div>
-
-          <p className="text-slate-500 text-[10px] font-mono text-center mt-6">
-            *SECURE LOGS BULLETIN: Regional dispatches require verified tax registration numbers. Inquire at headquarters to activate reseller billing terms.
-          </p>
-        </div>
-      </section>
 
     </div>
   );

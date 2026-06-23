@@ -4,27 +4,25 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
 import {
-  Trophy, Milestone, Award, ShieldAlert, HeartHandshake, Mail
+  Trophy, Milestone, Award, ShieldAlert, HeartHandshake
 } from "lucide-react";
-import { LEADERSHIP } from "@/lib/data";
 
 export default function AboutView() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<"vision" | "timeline" | "compliance">("vision");
 
   const impactStats = [
-    { value: "40+", label: "Regional Hub Cities", desc: "Active bulk storage dispatches across India" },
-    { value: "5000+", label: "Retailers Activated", desc: "Certified sub-dealers and high-street shops" },
-    { value: "₹250+ Cr", label: "Financial Turnovers", desc: "Business transacted since 2021 launch" },
-    { value: "10+", label: "Strategic Brands", desc: "Top global IoT and storage partners" },
+    { value: "₹168 Cr", label: "Revenue FY 2025–26", desc: "Up from ₹27.3 Cr in FY 2024–25" },
+    { value: "6×", label: "Growth in 2 Years", desc: "Sustained high-growth trajectory since 2021" },
+    { value: "11+", label: "Strategic Brands", desc: "CP Plus, Seagate, D-Link, TP-Link & more" },
+    { value: "Top #10", label: "Regional Distributor", desc: "Surveillance distributor ranking in India" },
   ];
 
   const milestones = [
-    { year: "2021", title: "Corporate Inception", desc: "Incorporated ACGR India with a central office in Maharashtra, setting up foundational regional partnerships for Hikvision and Prama." },
-    { year: "2022", title: "National Alliances Partner", desc: "Acquired National Authorized Distributor titles for Connect-G active accessories and Syntel digital EPABX telecom servers." },
-    { year: "2023", title: "Frictionless Cargo Hubs", desc: "Secured our master warehouse hub expanding same-day dispatches & setting up direct local product warranty and diagnostics desk." },
-    { year: "2024", title: "5k Dealer Network Milestone", desc: "Reached 5,000+ active retail integrations and extended network coverage to Chhattisgarh, Gujarat, and Goa." },
-    { year: "2026", title: "Smart AI IoT Surges", desc: "Began deploying smart AI analytics processors, massive-scale Seagate SkyHawk diagnostics integration, and customized municipal surveillance tenders." },
+    { year: "2021", title: "Company Founded", desc: "Advanced Security Syndicate established in Pune, Maharashtra — supplying CCTV cameras, recorders, storage media and accessories to channel partners across the region." },
+    { year: "FY 2024–25", title: "₹27.3 Cr Revenue", desc: "Completed first reported financial year with ₹27.3 Cr turnover. CP Plus emerged as top-selling brand at ₹12.6 Cr, followed by Seagate at ₹7.6 Cr." },
+    { year: "FY 2025–26", title: "₹168 Cr Revenue", desc: "Revenue surged 6× to ₹168 Cr. CP Plus crossed ₹90.5 Cr. Expanded brand portfolio to include D-Link, Zebion, iVOOMi, Prama, and Honeywell." },
+    { year: "2026–27", title: "₹385–567 Cr Projection", desc: "Sales projection targets ₹385 Cr (Min) to ₹567 Cr (Max) for FY 2026–27, with CP Plus at ₹200–300 Cr and Seagate at ₹40–50 Cr." },
   ];
 
   return (
@@ -47,9 +45,9 @@ export default function AboutView() {
             transition={{ delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl font-black tracking-tight"
           >
-            Regional Electronic Security <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-sky-300">
-              Distributor Since 2021
+            Certified Security Solutions <br className="hidden sm:inline" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-400">
+              by Advanced Security Syndicate
             </span>
           </motion.h1>
           <motion.p
@@ -58,7 +56,7 @@ export default function AboutView() {
             transition={{ delay: 0.2 }}
             className="max-w-2xl mx-auto mt-6 text-slate-300 font-sans text-sm sm:text-base leading-relaxed"
           >
-            ACGR India was founded with a singular conviction: to establish a modern, transparent, and frictionless security hardware supply-chain across India.
+            Advanced Security Syndicate is a regional distributor of electronic security and surveillance solutions in India. Since 2021, we have supplied CCTV cameras, recorders, storage media and accessories to channel partners, distributors and enterprise buyers across the region.
           </motion.p>
         </div>
       </section>
@@ -67,7 +65,7 @@ export default function AboutView() {
         <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xl p-8 sm:p-12">
           <div className="text-center mb-10">
             <span className="font-mono text-xs font-bold text-slate-400 tracking-wider uppercase block">
-              ACGR INDIA METRICS
+              ADVANCED SECURITY SYNDICATE — METRICS
             </span>
             <h3 className="font-display font-bold text-2xl text-slate-900 mt-1">
               Growth By The Numbers
@@ -85,6 +83,102 @@ export default function AboutView() {
                   </span>
                 </div>
                 <p className="text-slate-500 text-xs font-sans mt-3">{stat.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Company Performance */}
+      <section className="py-20 bg-slate-900 text-white overflow-hidden relative">
+        <div className="absolute inset-0 bg-grid-mesh opacity-10" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <span className="text-xs font-mono font-bold text-brand-400 uppercase tracking-widest block mb-2">
+              OUR COMPANY PERFORMANCE
+            </span>
+            <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white">
+              Growth By The Numbers
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Revenue cards */}
+            <div className="flex flex-col sm:flex-row items-center gap-6">
+              <div className="flex-1 bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                <p className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">FY 2024–25</p>
+                <p className="font-display font-black text-4xl sm:text-5xl text-white">₹27.3 Cr</p>
+                <p className="text-slate-400 text-xs font-sans mt-3">Starting revenue</p>
+              </div>
+              <div className="flex flex-col items-center gap-1 shrink-0">
+                <div className="text-accent-400 font-black text-2xl">›</div>
+                <div className="text-accent-400 font-black text-2xl">›</div>
+                <div className="text-accent-400 font-black text-2xl">›</div>
+                <span className="text-xs font-mono text-accent-400 font-bold mt-1">6×</span>
+              </div>
+              <div className="flex-1 bg-brand-600/20 border border-brand-500/40 rounded-3xl p-8 text-center ring-1 ring-brand-500/30">
+                <p className="text-xs font-mono text-brand-300 uppercase tracking-widest mb-3">FY 2025–26</p>
+                <p className="font-display font-black text-4xl sm:text-5xl text-white">₹168 Cr</p>
+                <p className="text-brand-300 text-xs font-sans mt-3">Current revenue</p>
+              </div>
+            </div>
+
+            {/* Text content */}
+            <div className="space-y-8">
+              <div className="space-y-3">
+                <h3 className="font-display font-bold text-lg text-accent-400">Year-over-Year Focus</h3>
+                <p className="text-slate-300 font-sans text-sm leading-relaxed">
+                  Building on a breakthrough expansion in FY 2024-25, the company maintained its upward momentum by more than doubling its performance to reach ₹168 Cr in FY 2025-26.
+                </p>
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-display font-bold text-lg text-accent-400">Investor / Visionary Style</h3>
+                <p className="text-slate-300 font-sans text-sm leading-relaxed">
+                  Our performance reflects a sustained high-growth trajectory, with revenue increasing over 2-fold in just two fiscal years — highlighting our successful market penetration and scalability.
+                </p>
+              </div>
+              <div className="grid grid-cols-3 gap-4 pt-2">
+                {[
+                  { label: "Growth", value: "6×" },
+                  { label: "Years", value: "2" },
+                  { label: "Ranking", value: "Top #10" },
+                ].map((m) => (
+                  <div key={m.label} className="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                    <span className="block font-mono font-black text-2xl text-brand-400">{m.value}</span>
+                    <span className="block text-xs font-sans text-slate-400 mt-1">{m.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Competitive Standing */}
+      <section className="py-20 bg-white border-y border-slate-200">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+          <div>
+            <span className="text-xs font-mono font-bold text-brand-600 uppercase tracking-widest block mb-3">
+              COMPETITIVE STANDING
+            </span>
+            <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
+              Our Numbers Tell the Story
+            </h2>
+          </div>
+          <p className="text-slate-600 font-sans text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+            At <span className="font-bold text-slate-900">Advanced Security Syndicate</span>, our numbers tell the story of our growth. We are proud to be ranked among the{" "}
+            <span className="font-bold text-brand-600">Top #10 Surveillance Distributors</span> region-wise, serving a vast network of partners across the region. We remain the preferred choice for cutting-edge security solutions and reliable distribution.
+          </p>
+          <div className="flex flex-wrap justify-center gap-6 pt-4">
+            {[
+              { value: "Top #10", label: "Regional Distributor Ranking" },
+              { value: "₹168 Cr+", label: "Revenue FY 2025–26" },
+              { value: "6×", label: "Growth in 2 Years" },
+              { value: "11+", label: "Brand Alliances" },
+            ].map((item) => (
+              <div key={item.label} className="bg-brand-50 border border-brand-200 rounded-2xl px-8 py-5 text-center min-w-[140px]">
+                <span className="block font-mono font-black text-3xl text-brand-700">{item.value}</span>
+                <span className="block text-xs font-sans text-slate-500 mt-1.5 font-medium">{item.label}</span>
               </div>
             ))}
           </div>
@@ -120,13 +214,13 @@ export default function AboutView() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center animate-fade-in">
             <div className="space-y-6">
               <h3 className="font-display font-extrabold text-2xl text-slate-900">
-                Pioneering Next-Gen Distribution Channels
+                Pioneering Next-Gen Security Solutions
               </h3>
               <p className="text-slate-600 font-sans text-sm leading-relaxed">
-                Most surveillance distributors act purely as paper commodity brokers. At ACGR, we believe distribution requires active technical value injection.
+                Most security providers operate as simple resellers. At Advanced Security Syndicate, we believe every solution requires active technical value — precision engineering, not just product delivery.
               </p>
               <p className="text-slate-600 font-sans text-sm leading-relaxed">
-                By maintaining highly organized testing labs in Maharashtra, we diagnostic-screen critical firmware updates, conduct hardware burn-in benchmarks, and package complete passive assembly systems for field deployment.
+                By maintaining highly organized testing labs, we diagnostic-screen critical firmware updates, conduct hardware burn-in benchmarks, and deploy complete, field-ready security systems.
               </p>
               <div className="space-y-3 pt-2">
                 {[
@@ -141,11 +235,11 @@ export default function AboutView() {
                 ))}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-brand-600 to-indigo-800 p-8 rounded-3xl text-white space-y-6 shadow-lg shadow-brand-900/10">
+            <div className="bg-gradient-to-br from-brand-700 to-brand-900 p-8 rounded-3xl text-white space-y-6 shadow-lg shadow-brand-900/10">
               <span className="text-xs font-mono uppercase bg-white/20 text-brand-100 px-2 py-0.5 rounded font-bold">
-                The ACGR Guarantee
+                The A.S.S. Guarantee
               </span>
-              <h4 className="font-display font-black text-xl">"Zero Failure Shipments"</h4>
+              <h4 className="font-display font-black text-xl">"Zero Failure. Zero Compromise."</h4>
               <p className="text-sm font-sans font-light leading-relaxed text-slate-200">
                 We know that security hardware failures at client installation sites halt security personnel, cause operational legal liability, and erode system integrator trust. That is why our dispatches adhere to rigorous zero-defect targets.
               </p>
@@ -196,74 +290,18 @@ export default function AboutView() {
         )}
       </section>
 
-      <section className="py-24 bg-slate-100 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs font-mono font-bold text-brand-600 uppercase tracking-widest block">
-              ACGR INDIA DIRECTORS
-            </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
-              The Leadership Team
-            </h2>
-            <p className="text-slate-500 text-sm font-sans mt-3">
-              Steered by seasoned industry veterans providing decades of accumulative security, logistics and enterprise telecom distribution wisdom.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {LEADERSHIP.map((leader) => (
-              <div
-                key={leader.id}
-                className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group"
-              >
-                <div className="aspect-square bg-slate-100 overflow-hidden relative">
-                  <img
-                    src={leader.image}
-                    alt={leader.name}
-                    className="w-full h-full object-cover object-top transition-transform duration-350 group-hover:scale-105"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = `https://picsum.photos/seed/${leader.id}/400/400`;
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span className="text-xs font-mono text-brand-300 font-bold">ACGR EXECUTIVE LEADERSHIP</span>
-                  </div>
-                </div>
-                <div className="p-6 space-y-3.5">
-                  <div>
-                    <h3 className="font-display font-black text-xl text-slate-900">{leader.name}</h3>
-                    <p className="text-xs font-mono text-brand-600 font-bold uppercase mt-0.5">{leader.role}</p>
-                  </div>
-                  <p className="text-slate-500 text-xs sm:text-sm font-sans leading-relaxed">{leader.bio}</p>
-                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-mono">
-                    <span className="text-slate-400">CONTACT DIAL:</span>
-                    <a
-                      href={`mailto:${leader.email}`}
-                      className="text-brand-600 hover:text-brand-700 font-bold flex items-center gap-1"
-                    >
-                      <Mail className="w-3.5 h-3.5" />
-                      {leader.email}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         <h3 className="font-display text-2xl sm:text-3xl font-black text-slate-900">
           Ready to Work with Us?
         </h3>
         <p className="text-slate-500 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
-          Open a verified channel dealership account today and secure special bulk pricing terms, certified training, and prompt diagnostics logs.
+          Connect with Advanced Security Syndicate today to get premium security solutions, certified products, and dedicated technical support for your project.
         </p>
         <button
           onClick={() => router.push("/contact")}
           className="px-8 py-4 bg-brand-600 hover:bg-brand-500 text-white font-display font-semibold rounded-xl text-sm transition-all shadow"
         >
-          Open a Channel Account
+          Get in Touch
         </button>
       </section>
 

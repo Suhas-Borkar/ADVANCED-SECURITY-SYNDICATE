@@ -15,7 +15,7 @@ export default function BrochureModal() {
         <div className="p-5 bg-slate-900 text-white flex justify-between items-center print:hidden border-b">
           <div className="flex items-center gap-2.5">
             <Shield className="w-5 h-5 text-brand-400" />
-            <span className="font-display font-medium text-sm">ACGR Certified Ledger Brochure</span>
+            <span className="font-display font-medium text-sm">Advanced Security Syndicate — Corporate Brochure</span>
           </div>
           <div className="flex items-center gap-2">
             <button
@@ -38,12 +38,12 @@ export default function BrochureModal() {
 
           <div className="flex items-center justify-between border-b pb-6 border-slate-200">
             <div>
-              <div className="flex items-baseline gap-1">
-                <span className="font-display font-black text-3xl tracking-tight text-slate-900">ACGR</span>
-                <span className="font-space text-xs tracking-wider text-brand-600 uppercase bg-brand-50 px-1 py-0.5 rounded border border-brand-200">INDIA</span>
+              <div className="flex items-baseline gap-1.5">
+                <span className="font-display font-black text-2xl tracking-tight text-slate-900">Advanced Security</span>
+                <span className="font-space text-xs tracking-wider text-brand-600 uppercase bg-brand-50 px-1 py-0.5 rounded border border-brand-200">Syndicate</span>
               </div>
-              <span className="text-[10px] font-mono font-bold tracking-widest text-slate-450 block uppercase mt-0.5">
-                National Surveillance & telecom distributor
+              <span className="text-[10px] font-mono font-bold tracking-widest text-slate-500 block uppercase mt-0.5">
+                Certified Security Solutions Provider
               </span>
             </div>
             <div className="text-right text-xs font-mono text-slate-400">
@@ -97,7 +97,7 @@ export default function BrochureModal() {
           <div className="border-t pt-6 flex items-center justify-between text-[11px] font-mono text-slate-400">
             <span className="flex items-center gap-1">
               <CheckCircle className="w-3.5 h-3.5 text-emerald-500" />
-              ACGR CHANNEL SECURE GUARANTEE
+              ADVANCED SECURITY SYNDICATE — CERTIFIED
             </span>
             <span>Active Ledger Ref: {new Date().getFullYear()}</span>
           </div>

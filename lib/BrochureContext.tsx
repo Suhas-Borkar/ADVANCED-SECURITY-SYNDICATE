@@ -21,17 +21,15 @@ export function BrochureProvider({ children }: { children: ReactNode }) {
 
   const downloadBrochure = () => {
     const textData = `===========================================
-ACGR INDIA PRIVATE LIMITED - DIGITAL BROCHURE
+ADVANCED SECURITY SYNDICATE - DIGITAL BROCHURE
 ===========================================
-Authorized National & Regional Surveillance Distributor
-Established: 2021
-Status: Certified Direct Channel Partner
-CIN: U31909MH2021PTCXXXXXX
+Certified Security Solutions Provider
+Status: Authorized Direct Channel Partner
 
-ACGR India is Central & Western India's premium tech-loyal
-distribution house. We specialize in CCTV Security Cameras,
-Enterprise EPABX Servers, Surveillance Hard Drives, Active PoE
-Switches, and heavy-gauge passive networking accessories.
+Advanced Security Syndicate is a premier security solutions
+company specializing in CCTV Security Cameras, Enterprise EPABX
+Servers, Surveillance Hard Drives, Active PoE Switches, and
+heavy-gauge passive networking accessories.
 
 -------------------------------------------
 1. CRITICAL PERFORMANCE NUMBERS:
@@ -63,14 +61,14 @@ Switches, and heavy-gauge passive networking accessories.
   Email: logistics@acgr.in
 
 ===========================================
-ENGINEERED FOR SECURITY - CHANNELS LOCK GURANTTEE
+ADVANCED SECURITY SYNDICATE - ENGINEERED FOR SECURITY
 ===========================================`;
 
     const blob = new Blob([textData], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "ACGR_India_Corporate_Brochure.txt";
+    link.download = "Advanced_Security_Syndicate_Brochure.txt";
     link.click();
     URL.revokeObjectURL(url);
 
