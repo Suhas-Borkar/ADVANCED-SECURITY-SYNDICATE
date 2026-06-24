@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative w-100 h-15 rounded-lg overflow-hidden bg-white/10 border border-white/20">
                 <Image
-                  src="/logo/logo.jpeg"
+                  src="/logo/logo.png"
                   alt="Advanced Security Syndicate logo"
                   fill
                   className="object-contain"

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "About Advanced Security Syndicate",
     description:
       "Regional distributor of security & surveillance solutions since 2021. Revenue grew from ₹27 Cr to ₹168 Cr in just 2 years. Top #10 surveillance distributor in India.",
-    images: [{ url: "/logo/logo.jpeg", alt: "Advanced Security Syndicate" }],
+    images: [{ url: "/logo/logo.png", alt: "Advanced Security Syndicate" }],
   },
   twitter: {
     title: "About Advanced Security Syndicate",

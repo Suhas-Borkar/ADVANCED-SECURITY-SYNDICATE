@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Terms & Conditions — Advanced Security Syndicate",
     description:
       "Read the detailed terms and conditions for purchasing, installing, and using CCTV security camera systems from Advanced Security Syndicate. Learn about warranties, returns, and service policies.",
-    images: [{ url: "/logo/logo.jpeg", alt: "Advanced Security Syndicate" }],
+    images: [{ url: "/logo/logo.png", alt: "Advanced Security Syndicate" }],
   },
   twitter: {
     title: "Terms & Conditions — Advanced Security Syndicate",
