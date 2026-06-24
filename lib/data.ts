@@ -111,7 +111,7 @@ export const BRANDS: Brand[] = [
     foundedYear: "2018",
     relationshipType: "Authorized National Distributor",
     website: "#",
-    content:"cover"
+    content:"contain"
   },
   {
     id: "syntel",
