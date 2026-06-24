@@ -88,6 +88,9 @@ export default function PrivacyPolicyView() {
           <a className="text-brand-600 hover:text-brand-700 underline" href="mailto:advancedssyn@gmail.com">
             advancedssyn@gmail.com
           </a>.
+          <a className="text-brand-600 hover:text-brand-700 underline" href="mailto:advancescrtcp55@gmail.com">
+            advancescrtcp55@gmail.com
+          </a>
         </p>
       </section>
     </main>
