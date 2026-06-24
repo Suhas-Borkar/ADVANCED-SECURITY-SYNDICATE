@@ -35,9 +35,9 @@ export default function Header() {
             className="flex items-center gap-3 cursor-pointer group"
           >
             <img
-              src="/logo/logo.jpeg"
+              src="/logo/logo.png"
               alt="Advanced Security Syndicate"
-              className="h-17 w-auto object-contain group-hover:opacity-90 transition-opacity"
+              className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"
             />
           </div>
 

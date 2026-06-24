@@ -197,6 +197,20 @@ export const BRANDS: Brand[] = [
     website: "#",
     content:"cover"
   },
+  {
+    id: "arcisai",
+    name: "ArcisAI",
+    logo: "🤖",
+    image: "/distributors/ArcisAI.png",
+    description: "Next-generation AI-powered video analytics and intelligent surveillance solutions for smart security infrastructure.",
+    longDescription: "ArcisAI delivers cutting-edge artificial intelligence driven surveillance technology, combining deep learning video analytics with smart camera systems. Their solutions enable automated threat detection, facial recognition, crowd analysis, and real-time alerts — purpose-built for enterprise, retail, and smart city deployments.",
+    category: "Camera",
+    featuredProducts: ["AI-Powered Video Analytics", "Deep Learning Smart Cameras", "Real-Time Threat Detection", "Crowd & Behaviour Analysis"],
+    foundedYear: "2020",
+    relationshipType: "Regional Distributor",
+    website: "#",
+    content:"cover"
+  },
 ];
 
 export const SERVICES: Service[] = [

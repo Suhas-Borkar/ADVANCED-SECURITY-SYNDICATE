@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Advanced Security Syndicate",
-    images: [{ url: "/logo/logo.jpeg", width: 1200, height: 630, alt: "Advanced Security Syndicate" }],
+    images: [{ url: "/logo/og-image.png", width: 1200, height: 630, alt: "Advanced Security Syndicate" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Advanced Security Syndicate — Certified Security Solutions",
     description: "Regional distributor of security & surveillance solutions. CP Plus, Seagate, D-Link, TP-Link & more.",
-    images: ["/logo/logo.jpeg"],
+    images: ["/logo/logo.png"],
   },
   icons: {
     icon: "/logo/logo-OG.png",
