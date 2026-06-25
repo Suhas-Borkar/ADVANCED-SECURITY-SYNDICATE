@@ -88,7 +88,7 @@ export default function BrandsView() {
                   <div className="flex items-center gap-4">
                     <div className="bg-white border border-slate-200 w-50 h-20 rounded-2xl flex items-center justify-center p-1 shadow-sm overflow-hidden shrink-0">
                       {brand.image ? (
-                        <img src={brand.image} alt={brand.name} className={`w-full h-full object-${brand.content}`} />
+                        <img src={brand.image} alt={brand.name} title={brand.name} className={`w-full h-full object-${brand.content}`} />
                       ) : (
                         <span className="text-4xl">{brand.logo}</span>
                       )}

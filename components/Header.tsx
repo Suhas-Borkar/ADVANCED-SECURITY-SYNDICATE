@@ -37,6 +37,7 @@ export default function Header() {
             <img
               src="/logo/logo.png"
               alt="Advanced Security Syndicate"
+              title="Advanced Security Syndicate — Home"
               className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"
             />
           </div>
