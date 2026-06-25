@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy — Advanced Security Syndicate",
     description:
       "Review the privacy practices of Advanced Security Syndicate, including data collection, usage, cookies, and rights for users of acgrindia.com.",
-    images: [{ url: "/logo/logo.png", alt: "Advanced Security Syndicate" }],
+    images: [{ url: "/logo/og-image.png", alt: "Advanced Security Syndicate" }],
   },
   twitter: {
     title: "Privacy Policy — Advanced Security Syndicate",

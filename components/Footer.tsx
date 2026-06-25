@@ -102,7 +102,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li>
                 <span className="text-xs font-semibold uppercase font-mono text-brand-400 block mb-0.5">CCTV & Security</span>
-                CP Plus • Prizor • Prama • Syntel 
+                CP Plus • Prizor • Prama • Syntel • Arcis  
               </li>
               <li>
                 <span className="text-xs font-semibold uppercase font-mono text-brand-400 block mb-0.5">Storage & Networking</span>

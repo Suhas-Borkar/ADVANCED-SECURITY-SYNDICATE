@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Advanced Security Syndicate — Security & Surveillance Distributor",
     description:
       "Regional distributor of CCTV cameras, recorders, storage media and accessories. CP Plus, Seagate, D-Link, TP-Link & 11+ brands. Top #10 distributor in India.",
-    images: [{ url: "/logo/logo.png", alt: "Advanced Security Syndicate" }],
+    images: [{ url: "/logo/og-image.png", alt: "Advanced Security Syndicate" }],
   },
   twitter: {
     title: "Advanced Security Syndicate — Security & Surveillance Distributor",

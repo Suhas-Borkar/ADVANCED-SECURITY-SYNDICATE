@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "CCTV Storage Calculator — Advanced Security Syndicate",
     description:
       "Calculate exact HDD storage for your CCTV project. Enter cameras, resolution, FPS & retention to get instant estimates. Free tool by Advanced Security Syndicate.",
-    images: [{ url: "/logo/logo.png", alt: "CCTV Storage Calculator" }],
+    images: [{ url: "/logo/og-image.png", alt: "CCTV Storage Calculator" }],
   },
   twitter: {
     title: "CCTV Storage Calculator — Advanced Security Syndicate",

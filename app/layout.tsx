@@ -25,12 +25,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Advanced Security Syndicate" }],
   creator: "Advanced Security Syndicate",
   robots: {
-    index: false,
-    follow: false,
-    nocache: false,
+    index: true,
+    follow: true,
+    nocache: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
     },
   },
   alternates: {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advanced Security Syndicate — Certified Security Solutions",
     description: "Regional distributor of security & surveillance solutions. CP Plus, Seagate, D-Link, TP-Link & more.",
-    images: ["/logo/logo.png"],
+    images: ["/logo/og-image.png"],
   },
   icons: {
     icon: "/logo/logo-OG.png",
