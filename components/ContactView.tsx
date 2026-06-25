@@ -33,7 +33,7 @@ export default function ContactView() {
     title: "Advanced Security Syndicate — Headquarters",
     address: "Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune – 411027",
     phone: "+918830851805 | | +919689147700",
-    email: " advancedssyn@gmail.com | | advancescrtcp55@gmail.com",
+    email: " advancescrtcp55@gmail.com",
     locationHint: "Opp Union Bank, New Sangavi, Pune",
     coords: "LAT: 18.5626° N, LON: 73.7884° E"
   };
