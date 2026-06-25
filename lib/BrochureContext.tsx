@@ -57,7 +57,7 @@ brand principals.
 3. CORE REGISTERED ADDRESSES & OFFICES:
 -------------------------------------------
 • Pune Corporate Office: Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune - 411027
-  Hotline: +918830851805 | +919689147700 || Email: advancescrtcp55@gmail.com
+  Hotline: +918830851805 | +919689147700 || Email: Info@assyndicate.com | advancescrtcp55@gmail.com
 
 ===========================================
 ADVANCED SECURITY SYNDICATE - ENGINEERED FOR TRUSTED SECURITY

@@ -136,6 +136,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-500 shrink-0" />
+                <a href="mailto:Info@assyndicate.com" title="Email Info@assyndicate.com" className="text-slate-400 hover:text-white transition-colors duration-150">
+                  <span className="break-all">
+                    Info@assyndicate.com
+                  </span>
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-brand-500 shrink-0" />
                 <a href="mailto:advancescrtcp55@gmail.com" title="Email advancescrtcp55@gmail.com" className="text-slate-400 hover:text-white transition-colors duration-150">
                   <span className="break-all">
                     advancescrtcp55@gmail.com

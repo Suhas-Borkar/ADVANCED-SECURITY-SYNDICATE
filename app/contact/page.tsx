@@ -5,7 +5,7 @@ import ContactView from "@/components/ContactView";
 export const metadata: Metadata = {
   title: "Contact Us — Advanced Security Syndicate",
   description:
-    "Get in touch with Advanced Security Syndicate. Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune – 411027. Phone: +91 8830851805 | +91 9689147700. Email: advancescrtcp55@gmail.com.",
+    "Get in touch with Advanced Security Syndicate. Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune – 411027. Phone: +91 8830851805 | +91 9689147700. Email: Info@assyndicate.com || advancescrtcp55@gmail.com.",
   openGraph: {
     title: "Contact Advanced Security Syndicate",
     description:

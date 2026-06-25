@@ -194,6 +194,7 @@ export default function TermsAndConditionsView() {
 				<p className="flex gap-1 text-slate-700 text-ls font-sans items-center">
 					If you have any questions about these Terms and Conditions, You can contact
 					us by email: 
+					<a className="text-brand-600 hover:text-brand-700 underline" href="mailto:Info@assyndicate.com" title="Email Info@assyndicate.com">Info@assyndicate.com</a>
 					<a className="text-brand-600 hover:text-brand-700 underline" href="mailto:advancescrtcp55@gmail.com" title="Email advancescrtcp55@gmail.com">advancescrtcp55@gmail.com</a>
 				</p>
 			</section>
