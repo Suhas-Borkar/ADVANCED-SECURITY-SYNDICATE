@@ -26,6 +26,8 @@ export default function ContactView() {
     brandsOfInterest: initialBrandInterest ? [initialBrandInterest] : []
   });
   const [formErrors, setFormErrors] = useState<Partial<InquiryFormState>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const officeDetails = {
     title: "Advanced Security Syndicate — Headquarters",
@@ -59,12 +61,30 @@ export default function ContactView() {
     return Object.keys(errors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
+
     const generatedTicket = `ACGR-TKT-${Math.floor(100000 + Math.random() * 900000)}`;
-    setTicketId(generatedTicket);
-    setFormSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, ticketId: generatedTicket }),
+      });
+
+      if (!res.ok) throw new Error("Failed to submit");
+
+      setTicketId(generatedTicket);
+      setFormSubmitted(true);
+    } catch {
+      setSubmitError("Something went wrong. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleResetForm = () => {
@@ -300,12 +320,16 @@ export default function ContactView() {
                   />
                 </div>
 
+                {submitError && (
+                  <p className="text-red-500 text-xs font-semibold text-center">{submitError}</p>
+                )}
                 <button
                   type="submit"
-                  className="w-full py-4 bg-brand-600 hover:bg-brand-500 text-white font-display font-semibold rounded-xl text-sm transition-colors duration-200 flex items-center justify-center gap-2 shadow"
+                  disabled={isSubmitting}
+                  className="w-full py-4 bg-brand-600 hover:bg-brand-500 disabled:opacity-60 disabled:cursor-not-allowed text-white font-display font-semibold rounded-xl text-sm transition-colors duration-200 flex items-center justify-center gap-2 shadow"
                 >
                   <Send className="w-4 h-4" />
-                  Submit Distributor Inquiry
+                  {isSubmitting ? "Submitting..." : "Submit Distributor Inquiry"}
                 </button>
               </form>
             ) : (
@@ -333,7 +357,7 @@ export default function ContactView() {
                   <div className="pt-2.5 border-t border-slate-200">
                     <span className="text-[10px] font-mono text-slate-400 block font-bold uppercase">ASSIGNED REPRESENTATIVE DESK:</span>
                     <strong className="text-xs font-semibold text-slate-700 block mt-0.5">
-                      WEST-CENTRAL PARTNER SERVICES
+                      Headquarters Pune — Advanced Security Syndicate
                     </strong>
                   </div>
                 </div>
