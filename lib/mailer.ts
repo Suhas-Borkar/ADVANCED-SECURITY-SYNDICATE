@@ -79,7 +79,7 @@ export async function sendInquiryNotification(data: {
           <p style="color:#475569;font-size:13px;">For urgent inquiries, reach us directly:</p>
           <p style="color:#475569;font-size:13px;">
             📞 +91 88308 51805 | +91 96891 47700<br/>
-            📧 advancedssyn@gmail.com
+            📧 advancescrtcp55@gmail.com
           </p>
         </div>
         <div style="background:#f8fafc;padding:16px;text-align:center;font-size:11px;color:#94a3b8;">
