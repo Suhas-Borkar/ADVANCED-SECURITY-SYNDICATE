@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Authorized Brands — Advanced Security Syndicate",
     description:
       "Authorized distributor for 11+ security brands — CP Plus, Seagate, D-Link, TP-Link & more. Genuine stock with certified warranties across India.",
-    images: [{ url: "/logo/logo.png", alt: "Advanced Security Syndicate Brands" }],
+    images: [{ url: "/logo/og-image.png", alt: "Advanced Security Syndicate Brands" }],
   },
   twitter: {
     title: "Authorized Brands — Advanced Security Syndicate",

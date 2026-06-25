@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Contact Advanced Security Syndicate",
     description:
       "Reach out for bulk orders, dealer accounts, or product inquiries. Pune, Maharashtra. Phone: +91 9689147700.",
-    images: [{ url: "/logo/logo.png", alt: "Contact Advanced Security Syndicate" }],
+    images: [{ url: "/logo/og-image.png", alt: "Contact Advanced Security Syndicate" }],
   },
   twitter: {
     title: "Contact Advanced Security Syndicate",
