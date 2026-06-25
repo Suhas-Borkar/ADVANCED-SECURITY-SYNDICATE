@@ -53,6 +53,7 @@ export default function Footer() {
                 <Image
                   src="/logo/logo.png"
                   alt="Advanced Security Syndicate logo"
+                  title="Advanced Security Syndicate"
                   fill
                   className="object-contain"
                 />
@@ -126,16 +127,16 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-brand-500 shrink-0" />
-                <a href="tel:+918830851805" className="text-slate-400 hover:text-white transition-colors duration-150">
+                <a href="tel:+918830851805" title="Call +91 8830851805" className="text-slate-400 hover:text-white transition-colors duration-150">
                   <span>+91 8830851805</span>
                 </a>
-                <a href="tel:+919689147700" className="text-slate-400 hover:text-white transition-colors duration-150">
+                <a href="tel:+919689147700" title="Call +91 9689147700" className="text-slate-400 hover:text-white transition-colors duration-150">
                   <span>+91 9689147700</span>
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-500 shrink-0" />
-                <a href="mailto:advancedssyn@gmail.com" className="text-slate-400 hover:text-white transition-colors duration-150">
+                <a href="mailto:advancedssyn@gmail.com" title="Email advancedssyn@gmail.com" className="text-slate-400 hover:text-white transition-colors duration-150">
                   <span className="break-all">
                     advancedssyn@gmail.com
                   </span>
@@ -143,7 +144,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-500 shrink-0" />
-                <a href="mailto:advancescrtcp55@gmail.com" className="text-slate-400 hover:text-white transition-colors duration-150">
+                <a href="mailto:advancescrtcp55@gmail.com" title="Email advancescrtcp55@gmail.com" className="text-slate-400 hover:text-white transition-colors duration-150">
                   <span className="break-all">
                     advancescrtcp55@gmail.com
                   </span>

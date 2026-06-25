@@ -39,6 +39,7 @@ export default function HomeView() {
           <img
             src="/images/acgr_hero_surveillance_1782124477760.jpg"
             alt="ACGR India Surveillance Hero"
+            title="Advanced Security Syndicate — Security & Surveillance Distributor"
             className="w-full h-full object-cover object-center opacity-40 scale-105 filter saturate-[0.8] contrast-[1.1]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent" />
@@ -213,7 +214,7 @@ export default function HomeView() {
               >
                 <div className="w-full h-30 flex items-center justify-center">
                   {brand.image ? (
-                    <img src={brand.image} alt={brand.name} className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-200" />
+                    <img src={brand.image} alt={brand.name} title={brand.name} className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-200" />
                   ) : (
                     <span className="text-5xl group-hover:scale-110 transition-transform">{brand.logo}</span>
                   )}
@@ -417,7 +418,7 @@ export default function HomeView() {
               <div className="flex items-center gap-3">
                 <div className="w-16 h-10 bg-white rounded-xl flex items-center justify-center p-1.5 shrink-0">
                   {selectedBrand.image ? (
-                    <img src={selectedBrand.image} alt={selectedBrand.name} className="w-full h-full object-contain" />
+                    <img src={selectedBrand.image} alt={selectedBrand.name} title={selectedBrand.name} className="w-full h-full object-contain" />
                   ) : (
                     <span className="text-2xl">{selectedBrand.logo}</span>
                   )}
