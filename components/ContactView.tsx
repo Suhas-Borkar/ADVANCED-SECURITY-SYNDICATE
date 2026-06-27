@@ -32,8 +32,8 @@ export default function ContactView() {
   const officeDetails = {
     title: "Advanced Security Syndicate — Headquarters",
     address: "Office No. 06, Narshinha Residency, Opp Union Bank, New Sangavi, Pune – 411027",
-    phone: "+918830851805 | | +919689147700",
-    email: " Info@assyndicate.com | | advancescrtcp55@gmail.com",
+    phone: ["+918830851805", "+919689147700"],
+    email: ["Info@assyndicate.com", "advancescrtcp55@gmail.com"],
     locationHint: "Opp Union Bank, New Sangavi, Pune",
     coords: "LAT: 18.5626° N, LON: 73.7884° E"
   };
@@ -149,11 +149,19 @@ export default function ContactView() {
                 <div className="grid grid-cols-2 gap-4 text-xs">
                   <div>
                     <span className="text-[9px] uppercase font-mono text-slate-400 block">CALL CONTACT:</span>
-                    <span className="font-mono font-bold text-slate-700 mt-0.5 block">{officeDetails.phone}</span>
+                    {
+                      officeDetails.phone.map((phone,index)=>(
+                        <span key={index} className="font-mono font-bold text-slate-700 mt-0.5 block">{phone}</span>
+                      ))
+                    }
                   </div>
                   <div>
                     <span className="text-[9px] uppercase font-mono text-slate-400 block">SUPPORT DESK EMAIL:</span>
-                    <span className="font-mono font-bold text-brand-600 mt-0.5 block break-all">{officeDetails.email}</span>
+                    {
+                      officeDetails.email.map((email, index) => (
+                        <span key={index} className="font-mono font-bold text-brand-600 mt-0.5 block break-all">{email}</span>
+                      ))
+                    }
                   </div>
                 </div>
                 <div className="p-3 bg-brand-50/50 rounded-xl border border-brand-100 flex gap-2 text-[11px] text-slate-600 leading-relaxed items-start">
