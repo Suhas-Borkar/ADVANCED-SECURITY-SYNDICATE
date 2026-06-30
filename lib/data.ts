@@ -299,7 +299,7 @@ export const LEADERSHIP: Leader[] = [
     id: "pawan",
     name: "Pawan Mandhare",
     role: "Founder & Director - Sales Operations",
-    bio: "Pawan manages dealer network engagement, partner enablement programs, and localized retail activations. Under his leadership, Advanced Security Syndicate has scaled from ₹27 Cr to ₹168 Cr in two fiscal years.",
+    bio: "Pawan manages dealer network engagement, partner enablement programs, and localized retail activations. Under his leadership, Advanced Security Syndicate has expanded its reach across 15+ cities and built a network of 11+ authorized brand partnerships.",
     image: "/images/executive_pawan_1782124517543.jpg",
     linkedin: "https://linkedin.com",
     email: "pawan.m@advancedsecurity.in"
