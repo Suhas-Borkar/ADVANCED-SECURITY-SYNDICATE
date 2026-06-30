@@ -25,10 +25,10 @@ export default function HomeView() {
   }, []);
 
   const stats = [
-    { value: "₹168 Cr+", label: "Revenue FY 2025–26", sub: "6× growth in two fiscal years" },
+    { value: "15+ Cities", label: "Pan-India Coverage", sub: "Serving system integrators across Maharashtra & beyond" },
     { value: "11+", label: "Brand Partnerships", sub: "Regional distribution alliances" },
     { value: "Top #10", label: "Surveillance Distributor", sub: "Ranked region-wise in India" },
-    { value: "Since 2021", label: "Established & Growing", sub: "₹27 Cr → ₹168 Cr in 2 years" },
+    { value: "Since 2021", label: "Established & Growing", sub: "Trusted security distributor for 5+ years" },
   ];
 
   return (

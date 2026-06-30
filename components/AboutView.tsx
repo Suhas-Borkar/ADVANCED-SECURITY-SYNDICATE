@@ -12,17 +12,17 @@ export default function AboutView() {
   const [activeTab, setActiveTab] = useState<"vision" | "timeline" | "compliance">("vision");
 
   const impactStats = [
-    { value: "₹168 Cr", label: "Revenue FY 2025–26", desc: "Up from ₹27.3 Cr in FY 2024–25" },
-    { value: "6×", label: "Growth in 2 Years", desc: "Sustained high-growth trajectory since 2021" },
+    { value: "15+ Cities", label: "Pan-India Coverage", desc: "Serving system integrators across Maharashtra & beyond" },
+    { value: "5+ Years", label: "Industry Experience", desc: "Trusted security distributor since 2021" },
     { value: "11+", label: "Strategic Brands", desc: "CP Plus, Seagate, D-Link, TP-Link & more" },
     { value: "Top #10", label: "Regional Distributor", desc: "Surveillance distributor ranking in India" },
   ];
 
   const milestones = [
     { year: "2021", title: "Company Founded", desc: "Advanced Security Syndicate established in Pune, Maharashtra — supplying CCTV cameras, recorders, storage media and accessories to channel partners across the region." },
-    { year: "FY 2024–25", title: "₹27.3 Cr Revenue", desc: "Completed first reported financial year with ₹27.3 Cr turnover. CP Plus emerged as top-selling brand at ₹12.6 Cr, followed by Seagate at ₹7.6 Cr." },
-    { year: "FY 2025–26", title: "₹168 Cr Revenue", desc: "Revenue surged 6× to ₹168 Cr. CP Plus crossed ₹90.5 Cr. Expanded brand portfolio to include D-Link, Zebion, iVOOMi, Prama, and Honeywell." },
-    { year: "2026–27", title: "₹385–567 Cr Projection", desc: "Sales projection targets ₹385 Cr (Min) to ₹567 Cr (Max) for FY 2026–27, with CP Plus at ₹200–300 Cr and Seagate at ₹40–50 Cr." },
+    { year: "FY 2024–25", title: "Strong Market Entry", desc: "Completed first reported financial year. CP Plus emerged as top-selling brand, followed by Seagate — establishing a strong foundation for growth." },
+    { year: "FY 2025–26", title: "Major Brand Expansion", desc: "Significant growth achieved across the network. Expanded brand portfolio to include D-Link, Zebion, iVOOMi, Prama, and Honeywell alongside existing partners." },
+    { year: "2026–27", title: "Ambitious Growth Targets", desc: "Targeting substantial expansion for FY 2026–27, with CP Plus and Seagate leading growth across new regions and dealer segments." },
   ];
 
   return (
@@ -95,52 +95,52 @@ export default function AboutView() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-xs font-mono font-bold text-brand-400 uppercase tracking-widest block mb-2">
-              OUR COMPANY PERFORMANCE
+              OUR REACH & NETWORK
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white">
-              Growth By The Numbers
+              Reach By The Numbers
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            {/* Revenue cards */}
+            {/* Coverage cards */}
             <div className="flex flex-col sm:flex-row items-center gap-6">
               <div className="flex-1 bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
-                <p className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">FY 2024–25</p>
-                <p className="font-display font-black text-4xl sm:text-5xl text-white">₹27.3 Cr</p>
-                <p className="text-slate-400 text-xs font-sans mt-3">Starting revenue</p>
+                <p className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Brand Partners</p>
+                <p className="font-display font-black text-4xl sm:text-5xl text-white">11+</p>
+                <p className="text-slate-400 text-xs font-sans mt-3">Authorized manufacturers</p>
               </div>
               <div className="flex flex-col items-center gap-1 shrink-0">
                 <div className="text-accent-400 font-black text-2xl">›</div>
                 <div className="text-accent-400 font-black text-2xl">›</div>
                 <div className="text-accent-400 font-black text-2xl">›</div>
-                <span className="text-xs font-mono text-accent-400 font-bold mt-1">6×</span>
+                <span className="text-xs font-mono text-accent-400 font-bold mt-1">Growing</span>
               </div>
               <div className="flex-1 bg-brand-600/20 border border-brand-500/40 rounded-3xl p-8 text-center ring-1 ring-brand-500/30">
-                <p className="text-xs font-mono text-brand-300 uppercase tracking-widest mb-3">FY 2025–26</p>
-                <p className="font-display font-black text-4xl sm:text-5xl text-white">₹168 Cr</p>
-                <p className="text-brand-300 text-xs font-sans mt-3">Current revenue</p>
+                <p className="text-xs font-mono text-brand-300 uppercase tracking-widest mb-3">City Coverage</p>
+                <p className="font-display font-black text-4xl sm:text-5xl text-white">15+</p>
+                <p className="text-brand-300 text-xs font-sans mt-3">Cities across India</p>
               </div>
             </div>
 
             {/* Text content */}
             <div className="space-y-8">
               <div className="space-y-3">
-                <h3 className="font-display font-bold text-lg text-accent-400">Year-over-Year Focus</h3>
+                <h3 className="font-display font-bold text-lg text-accent-400">Expanding Network</h3>
                 <p className="text-slate-300 font-sans text-sm leading-relaxed">
-                  Building on a breakthrough expansion in FY 2024-25, the company maintained its upward momentum by more than doubling its performance to reach ₹168 Cr in FY 2025-26.
+                  Since 2021, Advanced Security Syndicate has steadily grown its network of authorized brand partnerships and regional presence — serving system integrators and dealers across Maharashtra and beyond.
                 </p>
               </div>
               <div className="space-y-3">
-                <h3 className="font-display font-bold text-lg text-accent-400">Investor / Visionary Style</h3>
+                <h3 className="font-display font-bold text-lg text-accent-400">Partner-First Approach</h3>
                 <p className="text-slate-300 font-sans text-sm leading-relaxed">
-                  Our performance reflects a sustained high-growth trajectory, with revenue increasing over 2-fold in just two fiscal years — highlighting our successful market penetration and scalability.
+                  Our growth reflects a commitment to channel partner success — offering certified products, genuine stock, same-day dispatches, and dedicated technical support at every step.
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-4 pt-2">
                 {[
-                  { label: "Growth", value: "6×" },
-                  { label: "Years", value: "2" },
+                  { label: "Brands", value: "11+" },
+                  { label: "Cities", value: "15+" },
                   { label: "Ranking", value: "Top #10" },
                 ].map((m) => (
                   <div key={m.label} className="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
@@ -172,8 +172,8 @@ export default function AboutView() {
           <div className="flex flex-wrap justify-center gap-6 pt-4">
             {[
               { value: "Top #10", label: "Regional Distributor Ranking" },
-              { value: "₹168 Cr+", label: "Revenue FY 2025–26" },
-              { value: "6×", label: "Growth in 2 Years" },
+              { value: "15+ Cities", label: "Pan-India Coverage" },
+              { value: "5+ Years", label: "In the Industry" },
               { value: "11+", label: "Brand Alliances" },
             ].map((item) => (
               <div key={item.label} className="bg-brand-50 border border-brand-200 rounded-2xl px-8 py-5 text-center min-w-[140px]">

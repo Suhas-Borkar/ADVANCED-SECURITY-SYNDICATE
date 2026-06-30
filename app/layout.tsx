@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://assyndicate.com"),
   title: "Advanced Security Syndicate — Regional Distributor of Security & Surveillance Solutions",
   description:
-    "Advanced Security Syndicate is a regional distributor of electronic security and surveillance solutions in India. Since 2021, supplying CCTV cameras, recorders, storage media and accessories — CP Plus, Seagate, D-Link, TP-Link and more. Ranked Top #10 Surveillance Distributor. Revenue ₹168 Cr in FY 2025–26.",
+    "Advanced Security Syndicate is a regional distributor of electronic security and surveillance solutions in India. Since 2021, supplying CCTV cameras, recorders, storage media and accessories — CP Plus, Seagate, D-Link, TP-Link and more. Ranked Top #10 Surveillance Distributor. Serving 15+ cities across India.",
   keywords: [
     "Advanced Security Syndicate",
     "CCTV distributor India",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Advanced Security Syndicate — Certified Security Solutions",
     description:
-      "Regional distributor of electronic security & surveillance solutions in India. CP Plus, Seagate, D-Link, TP-Link and 11+ brands. Top #10 distributor. ₹168 Cr revenue FY 2025–26.",
+      "Regional distributor of electronic security & surveillance solutions in India. CP Plus, Seagate, D-Link, TP-Link and 11+ brands. Top #10 distributor. Serving 15+ cities across India.",
     type: "website",
     locale: "en_IN",
     siteName: "Advanced Security Syndicate",

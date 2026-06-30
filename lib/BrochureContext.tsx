@@ -35,7 +35,7 @@ brand principals.
 -------------------------------------------
 1. CRITICAL PERFORMANCE NUMBERS:
 -------------------------------------------
-• Business Volume Transacted: ₹168+ Crore
+• City Coverage: 15+ Cities Across India
 • Active Channel Sub-Dealers: 5,000+ Retailers
 • Brand Partnerships: 14+ Strategic Manufacturers
 • Regional Presence: 40+ Cities
